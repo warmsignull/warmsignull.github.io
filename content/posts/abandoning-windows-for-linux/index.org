@@ -1,0 +1,88 @@
+#+TITLE: Abandoning Windows for Linux
+#+DATE: 2025-10-31
+#+HUGO_SECTION: posts
+#+HUGO_SLUG: abandoning-windows-for-linux
+#+HUGO_BUNDLE: abandoning-windows-for-linux
+#+HUGO_TAGS: windows linux os arch #+HUGO_DRAFT true
+#+FILETAGS: :windows:linux:os:arch:#+HUGO_DRAFT:true:
+#+HUGO_AUTO_SET_LASTMOD: true
+#+EXPORT_FILE_NAME: index
+
+Abandoning windows for linux.
+Windows 11 update made me switch completly to Linux.
+Windows 11 was a perfect excuse for me to finally switch completly to Linux.
+
+
+
+My journey abandoning windows for linux. - Introduction
+
+
+
+i have used linux very briefly over the years but didn't have any real reason to switch over.
+
+i have tried out ubuntu, debian, mint, penguin normie stuff.
+
+most recently i have been using WSL2 from win10
+
+i have installed arch on a VM from windows just get my hands dirty and see what im setting myself up for.
+
+this time i am doing a full format, hands off no coming back jump to linux.
+
+i have been looking at the calendar for few months, trying to make up my mind whether i want to update my windows 10 to 11 or try a linux distro.
+
+finally the time has come. honestly, it is a perfect timing and excuse to finally switch. in a way i am grateful for windows to make me consider linux.
+
+don't get me wrong, while i consider myself to be an advanced computer user, this switch is no easy task for me. i have been using windows almost exclusively for my entire life.
+i started with windows 98, while playing around with windows 95 in my moms work. i guess im a dinosaur for some of you, but not as dinosaur as others.
+then used every single version except for windows 8, because wtf with the ui. i'm used to windows ways, i have my windows workflows, my windows muscle memory, windows everything. i dont even use doors.
+
+that jump into unknown is scary.
+
+but whats the worst that could happen. i can always reinstall windows.
+
+i don't think windows is a bad os, i think it is ok. i never had any serious issues with it. BSODs have been non existant for me for years, if they happened it was a max of 1-2 times per windows version. surprisingly the most BSODs i had were on windows xp. even vista was fine. i didn't like the ui too much but got used to it and didn't really have any issues with it.
+
+i really don't get what people mean when they say that visual studio (not visual studio code, zoomers) takes long time to boot or is slow. maybe it was in VS2008 days, idk.
+it is my favourite IDE (or maybe the one im most used to) and it is the best in class for anyone working with C#. ( i really need to try jetbrains )
+
+but also, i am a privacy advocate, and windows is going in a direction that i can't tolerate anymore
+
+the reasons i chose to abandon windows
+
+- microsoft account
+  - i want to own my os
+- personalisation and customisation
+  - i want to own my os, and i want to customize it
+- i don't like forced telemetry
+  - yes, you can stripe down most of it but it will never be enough
+- i still have a hdd, and i don't want windows to abuse it for no reason (no, i won't buy an sdd, my hdd works perfectly fine)
+  - link (find article online)
+- i dont want to be shoved apps and features i dont want
+- i dont want to update to versions that i dont want
+- i dont want my hardware to become obsolete for no reason
+- i dont want to have to pay for security upgrades when they make a version obsolete
+- i dont want to be forced to use AI
+- i dont want to run apps processes and services that are not needed
+- i dont want to be forced a specific desktop on me
+- i dont want my pc to take screenshots every second
+- i dont want to train someones ai on me and my activity
+- why am i even still paying for all of this
+- games work better on linux now
+  - except for the ones with kernel level anticheat, but fuck those anyway
+- some older games arent compatible at all with newest windows version, but work fine on linux
+- yes, windows has WSL2 now, which is pretty good, you can even run graphical linux apps, but did you know linux has similar options for windows apps?
+- i want to optimize and personalize my workflows
+- i have to pay for antivirus
+  - i will have to become the antivirus
+
+i really dont get whats the deal with people talking about ui changes across windows versions (except win8, wtf was that?). i mean, ui should not be an issue or a selling point anymore, since we already moved away from DOS long time ago. how is it a selling point when developers change theme and move the start button slightly. and why is it an issue at all, by not every part of the ui and theme should have been customizable
+
+why i decided to use arch? because it lets me customize every single thing from scratch in ways that will blow windows users minds.
+
+
+i want to document my journey into the unknown, into the land of neckbeards and penguins, the arcane knowledge, the mystical powers that might be.
+i am scared and excited.
+
+but going alone is dangerous. follow me across my journey, lets do it together.
+
+(subscribe per social media part, if blog just list all social media)
