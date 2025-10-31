@@ -9,7 +9,7 @@ Learning sticks faster when you can copy a working snippet. This post captures t
 
 ## Markdown fences
 
-Use triple backticks (```) followed by the language name. Hugo passes that hint to the theme’s highlighter.
+Use triple backticks ("```") followed by the language name. Hugo passes that hint to the theme’s highlighter.
 
 ```bash
 hugo new content posts/my-first-snippet/index.md
