@@ -6,7 +6,27 @@ summaryLength = 30
 enableRobotsTXT = true
 
 [params]
-description = 'A minimal Hugo blog with a dark theme and light mode toggle.'
+description = 'Tech rants, code experiments, and philosophical side quests—mostly in dark mode.'
+
+[[params.social]]
+name = 'GitHub'
+url = 'https://github.com/warmsignull'
+
+[[params.social]]
+name = 'Mastodon'
+url = 'https://mastodon.social/@warmsignull'
+
+[[params.social]]
+name = 'YouTube'
+url = 'https://www.youtube.com/@warmsignull'
+
+[[params.social]]
+name = 'Reddit'
+url = 'https://www.reddit.com/u/warmsignull'
+
+[[params.social]]
+name = 'Substack'
+url = 'https://warmsignull.substack.com'
 
 [pagination]
 pagerSize = 10
@@ -25,3 +45,15 @@ identifier = 'posts'
 name = 'Posts'
 url = '/posts/'
 weight = 2
+
+[[menu.main]]
+identifier = 'topics'
+name = 'Topics'
+url = '/topics/'
+weight = 3
+
+[[menu.main]]
+identifier = 'projects'
+name = 'Projects'
+url = '/projects/'
+weight = 4

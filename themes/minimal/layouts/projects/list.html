@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <section class="projects">
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="content">{{ . }}</div>
+      {{ end }}
+    </header>
+    {{ $projects := site.Data.projects.items }}
+    {{ if and $projects (gt (len $projects) 0) }}
+      <div class="projects-grid">
+        {{ range $projects }}
+          <article class="project-card">
+            <h2>{{ .title }}</h2>
+            <p>{{ .summary }}</p>
+            {{ with .tags }}
+              <ul class="tag-list">
+                {{ range . }}
+                  <li>#{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            {{ with .link }}
+              <a class="project-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">Check it out →</a>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="topics-empty">Projects are on their way—probably stuck in a merge queue.</p>
+    {{ end }}
+  </section>
+{{ end }}

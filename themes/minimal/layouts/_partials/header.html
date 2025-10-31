@@ -1,8 +1,13 @@
 <div class="header-bar">
   <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
-  <button class="theme-toggle" type="button" data-theme-toggle aria-live="polite">
+  <button
+    class="theme-toggle"
+    type="button"
+    data-theme-toggle
+    aria-live="polite"
+    aria-label="Switch theme"
+    title="Switch theme">
     <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-    <span class="theme-toggle__label">Switch to light theme</span>
   </button>
 </div>
 {{ with site.Params.description }}

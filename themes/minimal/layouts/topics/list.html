@@ -1,0 +1,64 @@
+{{ define "main" }}
+  <section class="topics" data-topics>
+    <header class="page-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="content">{{ . }}</div>
+      {{ end }}
+    </header>
+
+    <div class="topics-controls">
+      <label class="sr-only" for="tag-search">Filter tags</label>
+      <input
+        id="tag-search"
+        class="topics-search"
+        type="search"
+        placeholder="Search tags…"
+        autocomplete="off"
+        data-tag-search>
+      <div class="topics-tags" data-tag-list>
+        <button type="button" class="tag-pill is-active" data-tag="all">
+          All Topics
+        </button>
+        {{ range site.Taxonomies.tags.Alphabetical }}
+          {{ $term := .Term }}
+          <button type="button" class="tag-pill" data-tag="{{ urlize $term }}">
+            {{ $term }} <span class="tag-pill__count">{{ .Count }}</span>
+          </button>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="topics-results" data-tag-results>
+      {{ $posts := where site.RegularPages "Section" "posts" }}
+      {{ range $posts.ByDate.Reverse }}
+        {{ $tagSlugs := slice }}
+        {{ $tagLabels := slice }}
+        {{ with .Params.tags }}
+          {{ range . }}
+            {{ $tagSlugs = $tagSlugs | append (urlize .) }}
+            {{ $tagLabels = $tagLabels | append (lower .) }}
+          {{ end }}
+        {{ end }}
+        <article class="post-card" data-tags="{{ delimit $tagSlugs "," }}" data-tag-labels="{{ delimit $tagLabels "," }}">
+          <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          {{ with .Date }}
+            {{ $machine := . | time.Format "2006-01-02" }}
+            <time datetime="{{ $machine }}">{{ . | time.Format ":date_long" }}</time>
+          {{ end }}
+          {{ with .Summary }}
+            <p>{{ . | plainify }}</p>
+          {{ end }}
+          {{ with .Params.tags }}
+            <ul class="tag-list">
+              {{ range . }}
+                <li><a href="{{ (print "/tags/" (urlize .) "/") | relLangURL }}">{{ . }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+    <p class="topics-empty" data-topics-empty hidden>No posts match your filters yet.</p>
+  </section>
+{{ end }}

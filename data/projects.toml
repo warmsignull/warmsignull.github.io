@@ -1,0 +1,17 @@
+[[items]]
+title = "Bug Wrangler 3000"
+summary = "A tiny CLI that turns production bugs into motivational quotes before you fix them."
+link = "https://github.com/warmsignull/bug-wrangler-3000"
+tags = ["go", "cli", "automation"]
+
+[[items]]
+title = "Night Owl Notebook"
+summary = "Personal knowledge base powered by Hugo shortcodes and way too many emojis."
+link = "https://warmsignull.github.io/night-owl-notebook"
+tags = ["hugo", "notes", "design"]
+
+[[items]]
+title = "Philosopher's Patch"
+summary = "VS Code theme that makes every TODO feel like a moral dilemma."
+link = "https://marketplace.visualstudio.com/items?itemName=warmsignull.philosophers-patch"
+tags = ["vscode", "theme", "vibes"]
