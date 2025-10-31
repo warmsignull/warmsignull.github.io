@@ -24,10 +24,13 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: actions/setup-hugo@v3
+        uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.152.2"
+          hugo-version: '0.152.2'
           extended: true
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
 
       - name: Build site
         run: hugo --minify
