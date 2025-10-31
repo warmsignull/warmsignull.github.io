@@ -289,6 +289,22 @@ a:focus {
   font-size: 1.05rem;
 }
 
+.post-content img,
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.post-content img + em,
+.post-content img + strong,
+.post-content img + p {
+  margin-top: -1rem;
+}
+
 .post-content p {
   margin-bottom: 1.25rem;
 }
