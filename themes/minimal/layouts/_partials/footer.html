@@ -1,1 +1,31 @@
-<p>&copy; {{ now.Year }} {{ site.Title }} · Built with Hugo.</p>
+<div class="footer-inner">
+  <div class="footer-brand">
+    <span class="footer-title">{{ site.Title }}</span>
+    {{ with site.Params.description }}
+      <p>{{ . }}</p>
+    {{ end }}
+    <p class="footer-meta">&copy; {{ now.Year }} {{ site.Title }} · Built with Hugo.</p>
+  </div>
+  <div class="footer-links">
+    {{ with site.Params.social }}
+      <div>
+        <h2>Social</h2>
+        <ul>
+          {{ range . }}
+            <li><a href="{{ .url }}" target="_blank" rel="me noopener noreferrer">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+    {{ with site.Params.donations }}
+      <div>
+        <h2>Support</h2>
+        <ul>
+          {{ range . }}
+            <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
+</div>

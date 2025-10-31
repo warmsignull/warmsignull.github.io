@@ -85,6 +85,59 @@ a:focus {
   color: var(--muted);
   border-top: 1px solid var(--border);
   margin-top: auto;
+  padding-bottom: 3rem;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.footer-meta {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.footer-links h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: inherit;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--accent);
+  outline: none;
 }
 
 .header-bar {
@@ -218,6 +271,51 @@ a:focus {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.archive {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.archive-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.archive-year h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.archive-year ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.archive-year li {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.archive-year time {
+  font-size: 0.85rem;
+  color: var(--muted);
+  min-width: 4rem;
+}
+
+.archive-year a {
+  color: inherit;
+  font-weight: 600;
 }
 
 .project-card {

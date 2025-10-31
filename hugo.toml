@@ -1,12 +1,12 @@
 baseURL = 'https://warmsignull.github.io/'
 languageCode = 'en-us'
-title = 'Minimal Dark Blog'
+title = 'Warm Signull'
 theme = 'minimal'
 summaryLength = 30
 enableRobotsTXT = true
 
 [params]
-description = 'Tech rants, code experiments, and philosophical side quests—mostly in dark mode.'
+description = 'Tech rants, code experiments, and philosophical side quests. Mostly in dark mode.'
 
 [[params.social]]
 name = 'GitHub'
@@ -27,6 +27,18 @@ url = 'https://www.reddit.com/u/warmsignull'
 [[params.social]]
 name = 'Substack'
 url = 'https://warmsignull.substack.com'
+
+[[params.donations]]
+name = 'Buy Me a Coffee'
+url = 'https://www.buymeacoffee.com/warmsignull'
+
+[[params.donations]]
+name = 'Ko-fi'
+url = 'https://ko-fi.com/warmsignull'
+
+[[params.donations]]
+name = 'PayPal'
+url = 'https://paypal.me/warmsignull'
 
 [pagination]
 pagerSize = 10
@@ -57,3 +69,9 @@ identifier = 'projects'
 name = 'Projects'
 url = '/projects/'
 weight = 4
+
+[[menu.main]]
+identifier = 'archive'
+name = 'Archive'
+url = '/archive/'
+weight = 5

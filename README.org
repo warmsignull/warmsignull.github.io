@@ -1,2 +1,42 @@
-* Blog
-blog
+
+* Warm Signull Blog
+
+Live site: https://warmsignull.github.io/
+
+An unapologetically dark Hugo site that mixes tech rants, code experiments, and
+philosophical side quests. Visitors can flip the theme to light mode with a tiny
+moon and sun toggle, filter posts by tag on the Topics page, and browse every
+article through the Archive.
+
+** Requirements
+- Hugo extended v0.152.2 or newer
+- Python 3 (optional, only used here to generate sample images)
+
+** Local development
+Run the Hugo dev server with drafts enabled:
+
+#+begin_src sh
+hugo server -D
+#+end_src
+
+** Content structure
+- Posts live under =content/posts/<slug>/index.md= along with any images for that
+  post.
+- Site-wide pages such as Topics, Projects, and Archive live in their own
+  sections under =content/<section>/_index.md=.
+
+If you prefer scaffolding, you can generate a post bundle with:
+
+#+begin_src sh
+hugo new content posts/my-new-post/index.md
+#+end_src
+
+** Theming highlights
+- Default theme is dark and respects a stored preference in =localStorage=.
+- Header toggle is icon-only for a clean look.
+- Projects page pulls card data from =data/projects.toml=.
+- Topics page includes client side tag filtering.
+
+** Deployment
+The repository ships with a GitHub Actions workflow that builds with Hugo and
+deploys to GitHub Pages on every push to =master=. No manual build step required.
