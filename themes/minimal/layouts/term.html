@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section class="post">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="content">{{ . }}</div>
+    {{ end }}
+    <div class="post-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <article class="post-card">
+          <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          {{ with .Date }}
+            {{ $machine := . | time.Format "2006-01-02" }}
+            <time datetime="{{ $machine }}">{{ . | time.Format ":date_long" }}</time>
+          {{ end }}
+          {{ with .Summary }}
+            <p>{{ . | plainify }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

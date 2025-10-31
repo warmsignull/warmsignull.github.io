@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <article class="post">
+    <header class="post-header">
+      <h1>{{ .Title }}</h1>
+      <div class="post-meta">
+        {{ with .Date }}
+          {{ $machine := . | time.Format "2006-01-02" }}
+          <time datetime="{{ $machine }}">{{ . | time.Format ":date_full" }}</time>
+        {{ end }}
+        {{ with .Params.tags }}
+          <ul class="tag-list">
+            {{ range . }}
+              <li><a href="{{ (print "/tags/" (urlize .) "/") | relLangURL }}">{{ . }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+      {{ $hero := .Resources.GetMatch "cover*" }}
+      {{ if not $hero }}
+        {{ with .Resources.ByType "image" }}
+          {{ if gt (len .) 0 }}
+            {{ $hero = index (first 1 .) 0 }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ with $hero }}
+        <figure class="post-hero">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Params.coverAlt | default (printf "Cover image for %s" $.Title) }}">
+        </figure>
+      {{ end }}
+    </header>
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

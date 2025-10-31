@@ -1,0 +1,27 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Minimal Dark Blog'
+theme = 'minimal'
+summaryLength = 30
+enableRobotsTXT = true
+
+[params]
+description = 'A minimal Hugo blog with a dark theme and light mode toggle.'
+
+[pagination]
+pagerSize = 10
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.main]]
+identifier = 'home'
+name = 'Home'
+url = '/'
+weight = 1
+
+[[menu.main]]
+identifier = 'posts'
+name = 'Posts'
+url = '/posts/'
+weight = 2

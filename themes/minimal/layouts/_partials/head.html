@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{- $description := site.Params.description }}
+{{- with .Params.description }}{{ $description = . }}{{ end }}
+{{- with .Description }}{{ $description = . }}{{ end }}
+{{- with $description }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+{{ hugo.Generator }}
+<script>
+  (function () {
+    try {
+      var storageKey = 'theme-preference';
+      var stored = localStorage.getItem(storageKey);
+      var theme = stored || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}

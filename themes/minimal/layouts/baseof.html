@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" data-theme="dark">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="site">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    {{ partial "header.html" . }}
+  </header>
+  <main id="main-content" class="site-main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>

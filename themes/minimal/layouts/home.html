@@ -1,0 +1,31 @@
+{{ define "main" }}
+  {{ with .Content }}
+    <div class="content">{{ . }}</div>
+  {{ end }}
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{ if gt (len $posts) 0 }}
+    <div class="post-list">
+      {{ range $posts.ByDate.Reverse }}
+        <article class="post-card">
+          <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          {{ with .Date }}
+            {{ $machine := . | time.Format "2006-01-02" }}
+            <time datetime="{{ $machine }}">{{ . | time.Format ":date_long" }}</time>
+          {{ end }}
+          {{ with .Summary }}
+            <p>{{ . | plainify }}</p>
+          {{ end }}
+          {{ with .Params.tags }}
+            <ul class="tag-list">
+              {{ range . }}
+                <li><a href="{{ (print "/tags/" (urlize .) "/") | relLangURL }}">{{ . }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p>No posts yet. Create one with <code>hugo new content posts/my-post/index.md</code>.</p>
+  {{ end }}
+{{ end }}
