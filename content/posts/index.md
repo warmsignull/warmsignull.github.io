@@ -1,7 +1,7 @@
 +++
 title = "Test Blog Post"
 date = 2025-10-31
-lastmod = 2025-10-31T14:00:08-06:00
+lastmod = 2025-10-31T14:27:06-06:00
 slug = "test-blog-post"
 tags = ["test", "blog", "art", 1, 2, 3]
 draft = false
