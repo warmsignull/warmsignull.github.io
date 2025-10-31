@@ -1,9 +1,9 @@
-++
++++
 title = 'Syntax Highlighting Cheatsheet'
 date = '2024-07-21T09:00:00Z'
 description = 'Copy-ready examples for adding syntax-highlighted code blocks to your Hugo posts.'
 tags = ['syntax', 'code', 'hugo']
-++
++++
 
 Learning sticks faster when you can copy a working snippet. This post captures the most common ways to add syntax-highlighted code blocks in Hugo.
 
