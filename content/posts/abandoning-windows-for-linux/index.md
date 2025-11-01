@@ -1,55 +1,51 @@
-#+TITLE: Abandoning Windows for Linux - Introduction
-#+DATE: 2025-11-01
-#+HUGO_SECTION: posts
-#+HUGO_SLUG: abandoning-windows-for-linux
-#+HUGO_BUNDLE: abandoning-windows-for-linux
-#+HUGO_TAGS: windows linux os arch
-#+FILETAGS: :windows:linux:os:arch:
-#+HUGO_AUTO_SET_LASTMOD: true
-#+EXPORT_FILE_NAME: index
-#+summary: After years of tinkering, tweaking, and tolerating Windows, I finally took the plunge: full Linux, no dual boot, no way back. This is the story of why I left Microsoft’s ecosystem, what I’m running toward, and what I’m (probably) breaking along the way.
-#+HUGO_CUSTOM_FRONT_MATTER: cover.hidden true
-#+HUGO_CUSTOM_FRONT_MATTER: cover.hiddenInSingle true
-#+HUGO_CUSTOM_FRONT_MATTER: cover.hiddenInList true
++++
+title = "Abandoning Windows for Linux - Introduction"
+date = 2025-11-01
+lastmod = 2025-11-01T15:07:12-06:00
+slug = "abandoning-windows-for-linux"
+tags = ["windows", "linux", "os", "arch"]
+draft = false
+cover.hidden = "true cover.hiddenInSingle true cover.hiddenInList true"
++++
 
 This isn’t just another “I switched to Linux” story.
 
-It’s a journey. It's a documentation of +my slow descent into madness+ a slow, glorious descent into terminal dependency.
+It’s a journey. It's a documentation of ~~my slow descent into madness~~ a slow, glorious descent into terminal dependency.
 
 A story I want to document.
 A record of confusion, discovery, frustration, and small victories.
 
-I want to capture the entire process: from wiping Windows off the drive, to building a system that truly feels like *mine*.
+I want to capture the entire process: from wiping Windows off the drive, to building a system that truly feels like **mine**.
 
 I’m finally ready to do it for real.
 No dual boots, no virtual machines, no training wheels. Just me, a USB stick, and the terrifying freedom of choice.
 
 If you’ve ever thought about switching, follow along. (and don't choose Arch if it is your first time with Linux)
 
-#+begin_quote
-Back in 1991, Linus Torvalds announced Linux with a Usenet post saying it was “just a hobby”.
-Thirty-plus years later, that hobby runs everything from supercomputers to smart fridges, and soon, my laptop that may or may not boot tomorrow.
-#+end_quote
+> Back in 1991, Linus Torvalds announced Linux with a Usenet post saying it was “just a hobby”.
+> Thirty-plus years later, that hobby runs everything from supercomputers to smart fridges, and soon, my laptop that may or may not boot tomorrow.
 
-[[file:upgrade-to-win11-vs-linux.jpg]]
+{{< figure src="/upgrade-to-win11-vs-linux.jpg" >}}
 
-* Enough is enough
+
+## Enough is enough {#enough-is-enough}
+
 Like most bad decisions, it started with curiosity.
 
 I’ve been circling around Linux for years, trying out Ubuntu, Debian, Mint, the normie stuff, but never really committing. I’ve played with WSL2 on Windows 10, installed Arch in a VM just to get my hands dirty, and see how deep does the masochimsm go. (deep enough that Vim felt like a vacation) And then went back to Windows because it was familiar, predictable, and comfortable.
 
 But this time it’s different. This time it’s a full wipe. No dual boot, no safety net, no “I’ll switch back if it breaks.” Just a clean format and a hands-off jump into the unknown. I’ve been staring at the calendar for months, debating whether to upgrade from Windows 10 to 11 or finally take the plunge. Honestly, Microsoft made the decision easy for me. In a weird way, I’m grateful. They gave me the perfect excuse to finally switch.
 
-#+begin_quote
-In the ‘90s, Microsoft was the final boss of computing.
-If you wanted to use a computer, you used Windows, resistance was futile.
-Now? Even your fridge runs Linux, and Microsoft is porting its own tools to it.
-The empire didn’t fall, it just learned to love the penguin.
-#+end_quote
+> In the ‘90s, Microsoft was the final boss of computing.
+> If you wanted to use a computer, you used Windows, resistance was futile.
+> Now? Even your fridge runs Linux, and Microsoft is porting its own tools to it.
+> The empire didn’t fall, it just learned to love the penguin.
 
-[[file:stable-windows-vs-broken-linux.jpg]]
+{{< figure src="/stable-windows-vs-broken-linux.jpg" >}}
 
-* Windows is not (was not) that bad
+
+## Windows is not (was not) that bad {#windows-is-not--was-not--that-bad}
+
 Don’t get me wrong, I don’t hate Windows. It’s fine. I’ve used every version since 98, and even messed around with 95 at my mom’s work. I guess that makes me a dinosaur for some of you, but not as much of a dinosaur as others. I skipped Windows 8 because wtf was that? Otherwise, I’ve been through it all. Blue screens? Barely any. Crashes? Almost none. Even Vista was fine once you got used to UI.
 
 And honestly, I never understood when people complained that Visual Studio (the real one, not Visual Studio Code, zoomers) takes forever to start. Maybe it did back in the VS2008 days, I don’t know. It’s still my favorite IDE, or maybe just the one I’m most used to. Either way, it’s the best in class for C#. (I do need to try JetBrains one of these days though.)
@@ -58,14 +54,14 @@ But here’s the thing. I’m a privacy advocate. And Windows keeps marching in 
 
 I’ve used Windows my whole life. I know its ways, its workflows, its quirks. My fingers type Windows shortcuts without thinking. I don’t even own doors. But at some point, you just have to jump.
 
-#+begin_quote
-To be fair, Microsoft has a long tradition of making every other version good. 98 good, ME bad, XP good, Vista... creative.
-It’s like they alternate between brilliance and chaos just to keep historians employed.
-#+end_quote
+> To be fair, Microsoft has a long tradition of making every other version good. 98 good, ME bad, XP good, Vista... creative.
+> It’s like they alternate between brilliance and chaos just to keep historians employed.
 
-[[file:installing-updates.jpg]]
+{{< figure src="/installing-updates.jpg" >}}
 
-* I do a lot of things on my computer
+
+## I do a lot of things on my computer {#i-do-a-lot-of-things-on-my-computer}
+
 I don't use my laptop just for browsing internet and porn.
 
 I use my computer for pretty much everything that can make a CPU sweat. I build game engines, use existing game engines. Write software, websites, automation tools and run experiments that start as “quick tests” and end up consuming my entire weekend.
@@ -78,86 +74,86 @@ My computer has seen things. It’s survived compile storms, Unreal Engine build
 
 If Windows had a soul, mine would have PTSD by now.
 
-#+begin_quote
-I once tried to virtualize macOS inside Windows inside Linux inside a dream. Inception, but for sysadmins.
-My therapist calls it “recursive coping.”
-#+end_quote
+> I once tried to virtualize macOS inside Windows inside Linux inside a dream. Inception, but for sysadmins.
+> My therapist calls it “recursive coping.”
 
-[[file:he-builds.jpg]]
+{{< figure src="/he-builds.jpg" >}}
 
-* It is scary
+
+## It is scary {#it-is-scary}
+
 So here I am, taking the leap. And yeah, it’s scary. It’s not like I don’t know how computers work, but it’s different when everything you’ve built your workflow around suddenly changes. All the muscle memory, all the little habits - gone. There’s that “what if I break something and can’t fix it” feeling in the back of my head. That quiet voice saying, “maybe just one more Windows reinstall.” But I’m ignoring it. What’s the worst that could happen? I can always reinstall Windows later.
 
 Fear is natural. It’s what separates Arch users from Debian maintainers.
 
-#+begin_quote
-That voice has a point, though. Reinstalling Windows is like going back to an ex, predictable, comfortable, and somehow still installing updates when you said “no”
-#+end_quote
+> That voice has a point, though. Reinstalling Windows is like going back to an ex, predictable, comfortable, and somehow still installing updates when you said “no”
 
-[[file:indiana.jpg]]
+{{< figure src="/indiana.jpg" >}}
 
-* The reasons I chose to abandon Windows
+
+## The reasons I chose to abandon Windows {#the-reasons-i-chose-to-abandon-windows}
+
 The only login I want at boot time is my password, not a full KYC.
 
-- **Microsoft account nonsense**
-  - I want to own my OS, not log into it like its a social media account.
-  - Next thing you know they will make you log into Notepad.
+-   ****Microsoft account nonsense****
+    -   I want to own my OS, not log into it like its a social media account.
+    -   Next thing you know they will make you log into Notepad.
 
-- **Personalization and customization**
-  - If it’s my computer, I should be able to make it look and behave how I want.
+-   ****Personalization and customization****
+    -   If it’s my computer, I should be able to make it look and behave how I want.
 
-- **Forced telemetry and data collection**
-  - Windows knows me better than my therapist, and that’s not comforting.
-  - Sure, you can strip most of it down, but it never really goes away.
+-   ****Forced telemetry and data collection****
+    -   Windows knows me better than my therapist, and that’s not comforting.
+    -   Sure, you can strip most of it down, but it never really goes away.
 
-- **My poor HDD deserves peace**
-  - I still use an HDD, and I don’t want Windows thrashing it 24/7 for “background tasks.”
-  - No, I won’t buy an SSD just because Windows can’t chill.
+-   ****My poor HDD deserves peace****
+    -   I still use an HDD, and I don’t want Windows thrashing it 24/7 for “background tasks.”
+    -   No, I won’t buy an SSD just because Windows can’t chill.
 
-- **Bloatware and “features” I never asked for**
-  - I don’t need Candy Crush or Copilot on a dev machine.
+-   ****Bloatware and “features” I never asked for****
+    -   I don’t need Candy Crush or Copilot on a dev machine.
 
-- **Forced updates and version changes**
-  - I want to decide when to update, not get ambushed mid-project.
+-   ****Forced updates and version changes****
+    -   I want to decide when to update, not get ambushed mid-project.
 
-- **Planned obsolescence**
-  - Perfectly good hardware shouldn’t be “unsupported” just because Microsoft says so.
+-   ****Planned obsolescence****
+    -   Perfectly good hardware shouldn’t be “unsupported” just because Microsoft says so.
 
-- **Paid security updates**
-  - Why should I pay to keep something safe that was working fine yesterday?
+-   ****Paid security updates****
+    -   Why should I pay to keep something safe that was working fine yesterday?
 
-- **Forced AI integration**
-  - I’ll choose where AI belongs in my system, thank you very much.
+-   ****Forced AI integration****
+    -   I’ll choose where AI belongs in my system, thank you very much.
 
-- **Background junk and unnecessary services**
-  - I don’t need 80+ processes idling to show me a start menu.
+-   ****Background junk and unnecessary services****
+    -   I don’t need 80+ processes idling to show me a start menu.
 
-- **Locked-down UI**
-  - Stop moving my taskbar like it’s a prank.
+-   ****Locked-down UI****
+    -   Stop moving my taskbar like it’s a prank.
 
-- **Privacy invasion**
-  - I don’t want my PC taking screenshots or recording activity.
+-   ****Privacy invasion****
+    -   I don’t want my PC taking screenshots or recording activity.
 
-- **Training someone else’s AI with my data**
-  - If anyone’s going to learn from my mistakes, it should be me.
+-   ****Training someone else’s AI with my data****
+    -   If anyone’s going to learn from my mistakes, it should be me.
 
-- **Subscription creep**
-  - Why am I paying monthly for features that used to be basic?
+-   ****Subscription creep****
+    -   Why am I paying monthly for features that used to be basic?
 
-- **Gaming reality check**
-  - Games actually run better on Linux now (except the kernel-level anticheat ones, but honestly, screw those anyway).
+-   ****Gaming reality check****
+    -   Games actually run better on Linux now (except the kernel-level anticheat ones, but honestly, screw those anyway).
 
-- **Old games compatibility**
-  - Some older titles that broke on modern Windows work perfectly fine on Linux.
+-   ****Old games compatibility****
+    -   Some older titles that broke on modern Windows work perfectly fine on Linux.
 
-- **WSL2 isn’t enough**
-  - Yeah, it’s nice, but Linux can also run Windows apps. So who’s the real chad here?
+-   ****WSL2 isn’t enough****
+    -   Yeah, it’s nice, but Linux can also run Windows apps. So who’s the real chad here?
 
-- **Workflow optimization**
-  - I want full control over my setup, from keyboard shortcuts to how my system breathes.
+-   ****Workflow optimization****
+    -   I want full control over my setup, from keyboard shortcuts to how my system breathes.
 
-- **Antivirus taxes**
-  - I’m done paying for antivirus. On Linux, *I* am the antivirus. And occasionally the virus too.
+-   ****Antivirus taxes****
+    -   I’m done paying for antivirus. On Linux, **I** am the antivirus. And occasionally the virus too.
 
 Why am I even still paying for all of this? At this point, I should be getting frequent flyer miles for every forced update.
 
@@ -165,13 +161,13 @@ Windows now feels less like an operating system and more like a needy influencer
 
 It’s like living with your girlfriend who rearranges your furniture while you’re at work, “for your convenience.” If this is “user experience”, I’d like to unsubscribe.
 
-#+begin_quote
-It’s wild to think that in 1998, the U.S. government literally sued Microsoft for being *too powerful*.
-Now the same company is begging users to log in just to change their wallpaper.
-That’s not progress — that’s Stockholm Syndrome with extra steps.
-#+end_quote
+> It’s wild to think that in 1998, the U.S. government literally sued Microsoft for being **too powerful**.
+> Now the same company is begging users to log in just to change their wallpaper.
+> That’s not progress — that’s Stockholm Syndrome with extra steps.
 
-* Why I chose Arch
+
+## Why I chose Arch {#why-i-chose-arch}
+
 Because it lets me customize every single thing from scratch, in ways that would blow Windows users’ minds. No preinstalled junk, no mysterious background services eating CPU for “user experience”, no desktop I didn’t ask for. Just a clean slate and complete control. I get to decide what runs, what doesn’t, how it looks, how it boots, and how it breaks. Because if something breaks, it’s my fault, and that’s how I like it. Arch doesn’t hold your hand, but it also doesn’t get in your way. It gives you the tools and says, “go ahead, build your system.”
 Did you know you can have multiple kernels and desktops on linux?
 
@@ -179,15 +175,15 @@ I didn’t choose Arch because I’m special. I chose it because I enjoy pretend
 
 It’s the Dark Souls of operating systems, and I’m ready to git-good.
 
-#+begin_quote
-The irony is that Arch users love fixing what they broke.
-It’s not a bug, it’s a rite of passage.
-Somewhere, a grey-bearded user is compiling his 47th kernel this week just to prove that he still can.
-#+end_quote
+> The irony is that Arch users love fixing what they broke.
+> It’s not a bug, it’s a rite of passage.
+> Somewhere, a grey-bearded user is compiling his 47th kernel this week just to prove that he still can.
 
-[[file:you-died.jpg]]
+{{< figure src="/you-died.jpg" >}}
 
-* No turning back now
+
+## No turning back now {#no-turning-back-now}
+
 I want to document my journey into the unknown. Into the land of neckbeards and penguins, of arcane knowledge and mystical powers.
 
 I’m scared and excited at the same time.
@@ -198,4 +194,4 @@ Follow me on my journey. Let’s do it together!
 May my configs be readable, my kernels be stable, and my coffee supply infinite.
 I use Arch, btw.
 
-[[file:zelda.jpg]]
+{{< figure src="/zelda.jpg" >}}
