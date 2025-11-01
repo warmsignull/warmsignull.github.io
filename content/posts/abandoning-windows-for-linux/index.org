@@ -12,8 +12,11 @@
 * Preface
 This isn’t just another “I switched to Linux” story.
 
-It’s a journey, one I want to document.
+It’s a journey. It's a documentation of +my slow descent into madness+ a slow, glorious descent into terminal dependency.
+
+A story I want to document.
 A record of confusion, discovery, frustration, and small victories.
+
 I want to capture the entire process: from wiping Windows off the drive, to building a system that truly feels like *mine*.
 
 I’m finally ready to do it for real.
@@ -27,6 +30,8 @@ Thirty-plus years later, that hobby runs everything from supercomputers to smart
 #+end_quote
 
 * Enough is enough
+Like most bad decisions, it started with curiosity.
+
 I’ve been circling around Linux for years, trying out Ubuntu, Debian, Mint, the normie stuff, but never really committing. I’ve played with WSL2 on Windows 10, installed Arch in a VM just to get my hands dirty, and see how deep does the masochimsm go. (deep enough that Vim felt like a vacation) And then went back to Windows because it was familiar, predictable, and comfortable.
 
 But this time it’s different. This time it’s a full wipe. No dual boot, no safety net, no “I’ll switch back if it breaks.” Just a clean format and a hands-off jump into the unknown. I’ve been staring at the calendar for months, debating whether to upgrade from Windows 10 to 11 or finally take the plunge. Honestly, Microsoft made the decision easy for me. In a weird way, I’m grateful. They gave me the perfect excuse to finally switch.
@@ -73,11 +78,15 @@ My therapist calls it “recursive coping.”
 * It is scary
 So here I am, taking the leap. And yeah, it’s scary. It’s not like I don’t know how computers work, but it’s different when everything you’ve built your workflow around suddenly changes. All the muscle memory, all the little habits - gone. There’s that “what if I break something and can’t fix it” feeling in the back of my head. That quiet voice saying, “maybe just one more Windows reinstall.” But I’m ignoring it. What’s the worst that could happen? I can always reinstall Windows later.
 
+Fear is natural. It’s what separates Arch users from Debian maintainers.
+
 #+begin_quote
 That voice has a point, though. Reinstalling Windows is like going back to an ex, predictable, comfortable, and somehow still installing updates when you said “no”
 #+end_quote
 
 * The reasons I chose to abandon Windows
+The only login I want at boot time is my password, not a full KYC.
+
 - **Microsoft account nonsense**
   - I want to own my OS, not log into it like its a social media account.
   - Next thing you know they will make you log into Notepad.
@@ -142,7 +151,7 @@ Why am I even still paying for all of this? At this point, I should be getting f
 
 Windows now feels less like an operating system and more like a needy influencer constantly asking, “Do you like my new feature?”
 
-It’s like living with your girlfriend who rearranges your furniture while you’re at work, “for your convenience.”
+It’s like living with your girlfriend who rearranges your furniture while you’re at work, “for your convenience.” If this is “user experience”, I’d like to unsubscribe.
 
 #+begin_quote
 It’s wild to think that in 1998, the U.S. government literally sued Microsoft for being *too powerful*.
@@ -153,6 +162,8 @@ That’s not progress — that’s Stockholm Syndrome with extra steps.
 * Why I chose Arch
 Because it lets me customize every single thing from scratch, in ways that would blow Windows users’ minds. No preinstalled junk, no mysterious background services eating CPU for “user experience”, no desktop I didn’t ask for. Just a clean slate and complete control. I get to decide what runs, what doesn’t, how it looks, how it boots, and how it breaks. Because if something breaks, it’s my fault, and that’s how I like it. Arch doesn’t hold your hand, but it also doesn’t get in your way. It gives you the tools and says, “go ahead, build your system.”
 Did you know you can have multiple kernels and desktops on linux?
+
+I didn’t choose Arch because I’m special. I chose it because I enjoy pretending that reading the Arch Wiki counts as meditation.
 
 It’s the Dark Souls of operating systems, and I’m ready to git-good.
 
@@ -169,3 +180,6 @@ I’m scared and excited at the same time.
 
 But going alone is dangerous.
 Follow me on my journey. Let’s do it together!
+
+May my configs be readable, my kernels be stable, and my coffee supply infinite.
+I use Arch, btw.
