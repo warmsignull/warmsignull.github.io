@@ -8,9 +8,7 @@
 #+HUGO_AUTO_SET_LASTMOD: true
 #+EXPORT_FILE_NAME: index
 #+summary: After years of tinkering, tweaking, and tolerating Windows, I finally took the plunge: full Linux, no dual boot, no way back. This is the story of why I left Microsoft’s ecosystem, what I’m running toward, and what I’m (probably) breaking along the way.
-#+HUGO_CUSTOM_FRONT_MATTER: cover.hidden true
-#+HUGO_CUSTOM_FRONT_MATTER: cover.hiddenInSingle true
-#+HUGO_CUSTOM_FRONT_MATTER: cover.hiddenInList true
+#+HUGO_CUSTOM_FRONT_MATTER: :cover '((hidden . true) (hiddenInSingle . true) (hiddenInList . true))
 
 This isn’t just another “I switched to Linux” story.
 

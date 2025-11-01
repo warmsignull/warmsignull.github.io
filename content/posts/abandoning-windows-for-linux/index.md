@@ -1,11 +1,14 @@
 +++
 title = "Abandoning Windows for Linux - Introduction"
 date = 2025-11-01
-lastmod = 2025-11-01T15:07:12-06:00
+lastmod = 2025-11-01T15:30:51-06:00
 slug = "abandoning-windows-for-linux"
 tags = ["windows", "linux", "os", "arch"]
 draft = false
-cover.hidden = "true cover.hiddenInSingle true cover.hiddenInList true"
+[cover]
+  hidden = true
+  hiddenInSingle = true
+  hiddenInList = true
 +++
 
 This isn’t just another “I switched to Linux” story.

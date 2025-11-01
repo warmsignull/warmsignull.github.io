@@ -4,6 +4,11 @@ title = 'Warm Signull'
 theme = 'minimal'
 summaryLength = 30
 enableRobotsTXT = true
+[module]
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+    excludeFiles = ['**/*.org']
 
 [params]
 description = 'Tech rants, code experiments, and philosophical side quests. Mostly in dark mode.'
