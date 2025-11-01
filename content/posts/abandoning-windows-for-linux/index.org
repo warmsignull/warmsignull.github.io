@@ -7,82 +7,165 @@
 #+FILETAGS: :windows:linux:os:arch:#+HUGO_DRAFT:true:
 #+HUGO_AUTO_SET_LASTMOD: true
 #+EXPORT_FILE_NAME: index
+#+summary: After years of tinkering, tweaking, and tolerating Windows, I finally took the plunge: full Linux, no dual boot, no way back. This is the story of why I left Microsoft’s ecosystem, what I’m running toward, and what I’m (probably) breaking along the way.
 
-Abandoning windows for linux.
-Windows 11 update made me switch completly to Linux.
-Windows 11 was a perfect excuse for me to finally switch completly to Linux.
+* Preface
+This isn’t just another “I switched to Linux” story.
 
+It’s a journey, one I want to document.
+A record of confusion, discovery, frustration, and small victories.
+I want to capture the entire process: from wiping Windows off the drive, to building a system that truly feels like *mine*.
 
+I’m finally ready to do it for real.
+No dual boots, no virtual machines, no training wheels. Just me, a USB stick, and the terrifying freedom of choice.
 
-My journey abandoning windows for linux. - Introduction
+If you’ve ever thought about switching, follow along. (and choose Ubuntu if it is your first time with Linux)
 
+#+begin_quote
+Back in 1991, Linus Torvalds announced Linux with a Usenet post saying it was “just a hobby.”
+Thirty-plus years later, that hobby runs everything from supercomputers to smart fridges, and soon, my laptop that may or may not boot tomorrow.
+#+end_quote
 
+* Enough is enough
+I’ve been circling around Linux for years, trying out Ubuntu, Debian, Mint, the normie stuff, but never really committing. I’ve played with WSL2 on Windows 10, installed Arch in a VM just to get my hands dirty, and see how deep does the masochimsm go. (deep enough that Vim felt like a vacation) And then went back to Windows because it was familiar, predictable, and comfortable.
 
-i have used linux very briefly over the years but didn't have any real reason to switch over.
+But this time it’s different. This time it’s a full wipe. No dual boot, no safety net, no “I’ll switch back if it breaks.” Just a clean format and a hands-off jump into the unknown. I’ve been staring at the calendar for months, debating whether to upgrade from Windows 10 to 11 or finally take the plunge. Honestly, Microsoft made the decision easy for me. In a weird way, I’m grateful. They gave me the perfect excuse to finally switch.
 
-i have tried out ubuntu, debian, mint, penguin normie stuff.
+#+begin_quote
+In the ‘90s, Microsoft was the final boss of computing.
+If you wanted to use a computer, you used Windows, resistance was futile.
+Now? Even your fridge runs Linux, and Microsoft is porting its own tools to it.
+The empire didn’t fall, it just learned to love the penguin.
+#+end_quote
 
-most recently i have been using WSL2 from win10
+* Windows is not (was not) that bad
+Don’t get me wrong, I don’t hate Windows. It’s fine. I’ve used every version since 98, and even messed around with 95 at my mom’s work. I guess that makes me a dinosaur for some of you, but not as much of a dinosaur as others. I skipped Windows 8 because wtf was that? Otherwise, I’ve been through it all. Blue screens? Barely any. Crashes? Almost none. Even Vista was fine once you got used to UI.
 
-i have installed arch on a VM from windows just get my hands dirty and see what im setting myself up for.
+And honestly, I never understood when people complained that Visual Studio (the real one, not Visual Studio Code, zoomers) takes forever to start. Maybe it did back in the VS2008 days, I don’t know. It’s still my favorite IDE, or maybe just the one I’m most used to. Either way, it’s the best in class for C#. (I do need to try JetBrains one of these days though.)
 
-this time i am doing a full format, hands off no coming back jump to linux.
+But here’s the thing. I’m a privacy advocate. And Windows keeps marching in a direction I can’t tolerate anymore. It feels less like an operating system and more like a shopping mall that occasionally lets me open my programs. I’m tired of updates I didn’t ask for, ads I didn’t agree to, and “features” that spy on me in the background.
 
-i have been looking at the calendar for few months, trying to make up my mind whether i want to update my windows 10 to 11 or try a linux distro.
+I’ve used Windows my whole life. I know its ways, its workflows, its quirks. My fingers type Windows shortcuts without thinking. I don’t even own doors. But at some point, you just have to jump.
 
-finally the time has come. honestly, it is a perfect timing and excuse to finally switch. in a way i am grateful for windows to make me consider linux.
+#+begin_quote
+To be fair, Microsoft has a long tradition of making every other version good. 98 good, ME bad, XP good, Vista... creative.
+It’s like they alternate between brilliance and chaos just to keep historians employed.
+#+end_quote
 
-don't get me wrong, while i consider myself to be an advanced computer user, this switch is no easy task for me. i have been using windows almost exclusively for my entire life.
-i started with windows 98, while playing around with windows 95 in my moms work. i guess im a dinosaur for some of you, but not as dinosaur as others.
-then used every single version except for windows 8, because wtf with the ui. i'm used to windows ways, i have my windows workflows, my windows muscle memory, windows everything. i dont even use doors.
+* I do a lot of things on my computer
+I don't use my laptop just for browsing internet and porn.
 
-that jump into unknown is scary.
+I use my computer for pretty much everything that can make a CPU sweat. I build game engines, use existing game engines. Write software, websites, automation tools and run experiments that start as “quick tests” and end up consuming my entire weekend.
 
-but whats the worst that could happen. i can always reinstall windows.
+I make my GPU suffer. I play video games, do 3D modeling and rendering, video editing, and all sorts of heavy stuff that turns the fans into jet engines.
 
-i don't think windows is a bad os, i think it is ok. i never had any serious issues with it. BSODs have been non existant for me for years, if they happened it was a max of 1-2 times per windows version. surprisingly the most BSODs i had were on windows xp. even vista was fine. i didn't like the ui too much but got used to it and didn't really have any issues with it.
+I run VMs inside VMs just to see if I can break reality, and half the time I’m debugging my own “optimizations.” My setup is a weird mix of lab, studio, and nuclear reactor. I’ve customized Windows so deeply it’s probably self-aware at this point, and switching to Linux feels like teaching a dragon to behave. Powerful, chaotic, and a little scary.
 
-i really don't get what people mean when they say that visual studio (not visual studio code, zoomers) takes long time to boot or is slow. maybe it was in VS2008 days, idk.
-it is my favourite IDE (or maybe the one im most used to) and it is the best in class for anyone working with C#. ( i really need to try jetbrains )
+My computer has seen things. It’s survived compile storms, Unreal Engine builds, and Blender renders that made the fans beg for mercy.
 
-but also, i am a privacy advocate, and windows is going in a direction that i can't tolerate anymore
+If Windows had a soul, mine would have PTSD by now.
 
-the reasons i chose to abandon windows
+#+begin_quote
+I once tried to virtualize macOS inside Windows inside Linux inside a dream. Inception, but for sysadmins.
+My therapist calls it “recursive coping.”
+#+end_quote
 
-- microsoft account
-  - i want to own my os
-- personalisation and customisation
-  - i want to own my os, and i want to customize it
-- i don't like forced telemetry
-  - yes, you can stripe down most of it but it will never be enough
-- i still have a hdd, and i don't want windows to abuse it for no reason (no, i won't buy an sdd, my hdd works perfectly fine)
-  - link (find article online)
-- i dont want to be shoved apps and features i dont want
-- i dont want to update to versions that i dont want
-- i dont want my hardware to become obsolete for no reason
-- i dont want to have to pay for security upgrades when they make a version obsolete
-- i dont want to be forced to use AI
-- i dont want to run apps processes and services that are not needed
-- i dont want to be forced a specific desktop on me
-- i dont want my pc to take screenshots every second
-- i dont want to train someones ai on me and my activity
-- why am i even still paying for all of this
-- games work better on linux now
-  - except for the ones with kernel level anticheat, but fuck those anyway
-- some older games arent compatible at all with newest windows version, but work fine on linux
-- yes, windows has WSL2 now, which is pretty good, you can even run graphical linux apps, but did you know linux has similar options for windows apps?
-- i want to optimize and personalize my workflows
-- i have to pay for antivirus
-  - i will have to become the antivirus
+* It is scary
+So here I am, taking the leap. And yeah, it’s scary. It’s not like I don’t know how computers work, but it’s different when everything you’ve built your workflow around suddenly changes. All the muscle memory, all the little habits - gone. There’s that “what if I break something and can’t fix it” feeling in the back of my head. That quiet voice saying, “maybe just one more Windows reinstall.” But I’m ignoring it. What’s the worst that could happen? I can always reinstall Windows later.
 
-i really dont get whats the deal with people talking about ui changes across windows versions (except win8, wtf was that?). i mean, ui should not be an issue or a selling point anymore, since we already moved away from DOS long time ago. how is it a selling point when developers change theme and move the start button slightly. and why is it an issue at all, by not every part of the ui and theme should have been customizable
+#+begin_quote
+That voice has a point, though. Reinstalling Windows is like going back to an ex, predictable, comfortable, and somehow still installing updates when you said “no”
+#+end_quote
 
-why i decided to use arch? because it lets me customize every single thing from scratch in ways that will blow windows users minds.
+* The reasons I chose to abandon Windows
+- **Microsoft account nonsense**
+  - I want to own my OS, not log into it like its a social media account.
+  - Next thing you know they will make you log into Notepad.
 
+- **Personalization and customization**
+  - If it’s my computer, I should be able to make it look and behave how I want.
 
-i want to document my journey into the unknown, into the land of neckbeards and penguins, the arcane knowledge, the mystical powers that might be.
-i am scared and excited.
+- **Forced telemetry and data collection**
+  - Windows knows me better than my therapist, and that’s not comforting.
+  - Sure, you can strip most of it down, but it never really goes away.
 
-but going alone is dangerous. follow me across my journey, lets do it together.
+- **My poor HDD deserves peace**
+  - I still use an HDD, and I don’t want Windows thrashing it 24/7 for “background tasks.”
+  - No, I won’t buy an SSD just because Windows can’t chill.
 
-(subscribe per social media part, if blog just list all social media)
+- **Bloatware and “features” I never asked for**
+  - I don’t need Candy Crush or Copilot on a dev machine.
+
+- **Forced updates and version changes**
+  - I want to decide when to update, not get ambushed mid-project.
+
+- **Planned obsolescence**
+  - Perfectly good hardware shouldn’t be “unsupported” just because Microsoft says so.
+
+- **Paid security updates**
+  - Why should I pay to keep something safe that was working fine yesterday?
+
+- **Forced AI integration**
+  - I’ll choose where AI belongs in my system, thank you very much.
+
+- **Background junk and unnecessary services**
+  - I don’t need 80+ processes idling to show me a start menu.
+
+- **Locked-down UI**
+  - Stop moving my taskbar like it’s a prank.
+
+- **Privacy invasion**
+  - I don’t want my PC taking screenshots or recording activity.
+
+- **Training someone else’s AI with my data**
+  - If anyone’s going to learn from my mistakes, it should be me.
+
+- **Subscription creep**
+  - Why am I paying monthly for features that used to be basic?
+
+- **Gaming reality check**
+  - Games actually run better on Linux now (except the kernel-level anticheat ones, but honestly, screw those anyway).
+
+- **Old games compatibility**
+  - Some older titles that broke on modern Windows work perfectly fine on Linux.
+
+- **WSL2 isn’t enough**
+  - Yeah, it’s nice, but Linux can also run Windows apps. So who’s the real chad here?
+
+- **Workflow optimization**
+  - I want full control over my setup, from keyboard shortcuts to how my system breathes.
+
+- **Antivirus taxes**
+  - I’m done paying for antivirus. On Linux, *I* am the antivirus. And occasionally the virus too.
+
+Why am I even still paying for all of this? At this point, I should be getting frequent flyer miles for every forced update.
+
+Windows now feels less like an operating system and more like a needy influencer constantly asking, “Do you like my new feature?”
+
+It’s like living with your girlfriend who rearranges your furniture while you’re at work, “for your convenience.”
+
+#+begin_quote
+It’s wild to think that in 1998, the U.S. government literally sued Microsoft for being *too powerful*.
+Now the same company is begging users to log in just to change their wallpaper.
+That’s not progress — that’s Stockholm Syndrome with extra steps.
+#+end_quote
+
+* Why I chose Arch
+Because it lets me customize every single thing from scratch, in ways that would blow Windows users’ minds. No preinstalled junk, no mysterious background services eating CPU for “user experience”, no desktop I didn’t ask for. Just a clean slate and complete control. I get to decide what runs, what doesn’t, how it looks, how it boots, and how it breaks. Because if something breaks, it’s my fault, and that’s how I like it. Arch doesn’t hold your hand, but it also doesn’t get in your way. It gives you the tools and says, “go ahead, build your system.”
+Did you know you can have multiple kernels and desktops on linux?
+
+It’s the Dark Souls of operating systems, and I’m ready to git-good.
+
+#+begin_quote
+The irony is that Arch users love fixing what they broke.
+It’s not a bug, it’s a rite of passage.
+Somewhere, a grey-bearded user is compiling his 47th kernel this week just to prove that he still can.
+#+end_quote
+
+* No turning back now
+I want to document my journey into the unknown. Into the land of neckbeards and penguins, of arcane knowledge and mystical powers.
+
+I’m scared and excited at the same time.
+
+But going alone is dangerous.
+Follow me on my journey. Let’s do it together!
