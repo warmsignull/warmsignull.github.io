@@ -3,7 +3,7 @@ title = 'Thank You'
 description = 'Donation confirmed. Thank you for backing Warm Signull.'
 +++
 
-# You’re amazing — thank you!
+# You are amazing! Thank you!
 
 Your support just landed, and it means a lot. Payment was processed securely by Stripe, and everything is already in motion on my side.
 

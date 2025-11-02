@@ -8,6 +8,12 @@ late-night debugging sessions, deep-dive essays, or the occasional wildly
 over-engineered side project. You can contribute any amount, one-time or as a
 monthly boost, and optionally leave a note that I’ll read personally.
 
+**Options:**
+
+- **Ko-fi:** <https://ko-fi.com/warmsignull>
+- **Patreon:** <https://www.patreon.com/warmsignull>
+- **Stripe:** Use the form below to launch a secure Stripe Checkout session.
+
 <div class="support-wrapper">
 <form id="donation-form" class="support-form">
 <div class="form-row">

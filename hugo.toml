@@ -37,6 +37,14 @@ url = 'https://warmsignull.substack.com'
 name = 'Support Me'
 url = '/support/'
 
+[[params.donations]]
+name = 'Ko-fi'
+url = 'https://ko-fi.com/warmsignull'
+
+[[params.donations]]
+name = 'Patreon'
+url = 'https://www.patreon.com/warmsignull'
+
 [pagination]
 pagerSize = 10
 
