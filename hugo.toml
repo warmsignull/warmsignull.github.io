@@ -72,3 +72,9 @@ identifier = 'archive'
 name = 'Archive'
 url = '/archive/'
 weight = 5
+
+[[menu.main]]
+identifier = 'support'
+name = 'Support Me'
+url = '/support/'
+weight = 6
