@@ -78,3 +78,9 @@ identifier = 'support'
 name = 'Support Me'
 url = '/support/'
 weight = 6
+
+[[menu.main]]
+identifier = 'contact'
+name = 'Contact'
+url = '/contact/'
+weight = 7
