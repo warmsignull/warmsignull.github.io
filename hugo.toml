@@ -34,16 +34,8 @@ name = 'Substack'
 url = 'https://warmsignull.substack.com'
 
 [[params.donations]]
-name = 'Buy Me a Coffee'
-url = 'https://www.buymeacoffee.com/warmsignull'
-
-[[params.donations]]
-name = 'Ko-fi'
-url = 'https://ko-fi.com/warmsignull'
-
-[[params.donations]]
-name = 'PayPal'
-url = 'https://paypal.me/warmsignull'
+name = 'Support Me'
+url = '/support/'
 
 [pagination]
 pagerSize = 10
