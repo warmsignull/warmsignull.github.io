@@ -148,9 +148,18 @@ a:focus {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-size: 1.5rem;
   font-weight: 600;
   color: inherit;
+}
+
+.brand img {
+  height: 2.2rem;
+  width: auto;
+  display: block;
 }
 
 .tagline {

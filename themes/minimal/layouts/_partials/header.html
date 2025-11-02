@@ -1,5 +1,8 @@
 <div class="header-bar">
-  <a class="brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  <a class="brand" href="{{ "/" | relURL }}">
+    <img src="{{ "logo.png" | relURL }}" alt="" loading="lazy" decoding="async" width="132" height="44" />
+    <span>{{ site.Title }}</span>
+  </a>
   <button
     class="theme-toggle"
     type="button"
