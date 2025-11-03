@@ -10,6 +10,217 @@
 #+summary: After years of tinkering, tweaking, and tolerating Windows, I finally took the plunge: full Linux, no dual boot, no way back. This is the story of why I left Microsoft’s ecosystem, what I’m running toward, and what I’m (probably) breaking along the way.
 #+HUGO_CUSTOM_FRONT_MATTER: :cover '((hidden . true) (hiddenInSingle . true) (hiddenInList . true))
 
+* The Adventure Has Begun
+
+Nuked Windows. Installing Arch.
+
+Let’s get one thing straight: the 100% manual Arch install is painful. You will type hundreds of commands, edit hundreds of config files, and question all your life choices along the way. It’s a digital pilgrimage that borders on masochism, and I’ve decided this is where I draw the line.
+
+Thankfully, I’ve found a middle ground: using the *archinstall* command.
+Select the “minimal” preset (or don’t select any preset at all). It is the perfect balance between control and sanity.
+
+Here’s the funny part: if you look at the official Arch Wiki or most of the “I Installed Arch So You Don’t Have To” YouTube guides, you’ll barely see anyone mention *archinstall*. It feels like Fight Club rules.
+Rule number one: don’t talk about archinstall.
+Rule number two: pretend you did it manually so people think you’re hardcore.
+
+So for the longest time, I thought the only “real” way to install Arch was 100% manual, like some sacred rite of suffering. Turns out, you can automate some pain away.
+
+And here’s another hidden truth:
+The 100% manual install depends heavily on your hardware and environment. No single guide fits all. Right from the start, you’ll be partitioning and formatting drives, and the commands differ slightly between HDDs and SSDs. They also differ depending on if you use encryption, what boot system you use, etc. Then Arch needs internet access to pull the base system, which means manually configuring Wi‑Fi or Ethernet. There are multiple ways to do that, depending on what networking stack or drivers you’ve got.
+
+And heaven help you if your Wi‑Fi card doesn’t work out of the box. Thankfully, that wasn’t me. But I had my share of other misadventures.
+
+* Day 1: Welcome to Hell (or UEFI)
+
+If you’ve been living under a rock like I did, you might not know that BIOS is old man tech now. The modern world runs on UEFI, which is like BIOS but with more attitude and more ways to break.
+
+For years, I thought my laptop simply could not boot Linux. Every time I burned an ISO to a USB, it never appeared in the boot menu. I scoured forums, read conspiracy theories about vendors secretly blocking Linux installs, and even found people swearing you needed to buy some special USB gadget to “pre‑load” ports before boot.
+
+I was *this close* to buying it.
+
+But no one ever asked the obvious question:
+“Are you using MBR or GPT partitioning?”
+
+- MBR is for BIOS.
+- GPT is for UEFI.
+
+Some systems support both, but newer ones usually support only UEFI.
+That was my first big lesson, and my first victory. My happiness did not last long.
+
+* SATA Mode and the Hidden Menu from Hell
+
+Next obstacle: my HDD wasn’t being detected.
+After a long rabbit hole of Googling, I discovered SATA mode, the setting that defines how your motherboard talks to your drives.
+
+Mine was set to RST, but Arch prefers AHCI.
+“Easy fix,” I thought. “I’ll just change the setting in BIOS.”
+Except the option was hidden.
+
+Yes, hidden. I had to find a special key combination just to reveal the setting and switch it. Apparently I was not worthy of seeing advanced options.
+
+At this point, I started questioning my life choices again.
+I felt like one of those Tech Guru YouTubers who pretends to know what they’re doing while slowly reading from Arch Wiki behind the camera. The only difference is that I didn’t have RGB lighting to hide my tears.
+
+But I pressed on.
+
+* Setting Up Internet
+
+Arch does not hold your hand here either.
+You can connect through:
+
+- iwd
+- netctl
+- NetworkManager (if you install it)
+- wpa_supplicant
+- native systemd networking
+
+I won’t spoil the fun for you. Researching all these is part of the Arch experience.
+But here’s the catch: when you’re installing from the ISO, you have to set it up every single time you reboot into the installer. I ended up using both iwd and netctl at different points, because of course I did.
+
+Eventually, after installation, I switched to NetworkManager, since it remembers connections like a civilized tool. You can configure Wi‑Fi manually by editing config files, but by then I was emotionally exhausted.
+
+At one point, my package downloads started failing due to DNS issues.
+I had to manually edit configuration files to fix it.
+Then I hit a “package not found” error. The databases were outdated or misconfigured. Another day, another learning curve.
+
+I swear every time I fixed one thing, Arch whispered, “Good, now break something else.”
+
+* Installing Arch (Round One)
+
+Finally, the real installation began.
+
+In the installer, I set up user profiles, left root passwordless (living dangerously), enabled LUKS encryption, and chose Btrfs as my filesystem.
+
+If you’ve also been living under a rock, you’re going to love this one.
+
+**What is Btrfs?**
+
+Btrfs (B‑tree File System) is a modern Linux filesystem designed for reliability, scalability, and advanced features.
+
+- Copy‑on‑write (CoW): When data changes, it writes a new copy instead of overwriting, which enables snapshots and versioning.
+- Snapshots and subvolumes: Instant, space‑efficient system snapshots or logical divisions of your drive.
+- Checksums: Every block has integrity checks to detect and correct bit‑rot.
+- Built‑in RAID support: RAID 0, 1, 10, 5, and 6 without external tools.
+- Compression, deduplication, online resizing.
+- Space efficiency: With compression enabled, you can store more with less.
+
+Neat, isn’t it?
+
+But here’s the part that guides often gloss over:
+Snapshots don’t contain actual data.
+If you copy your tiny snapshots to another machine, you cannot recover your files unless you move the entire partition. Worth knowing before disaster strikes.
+
+When you use the guided partition options in archinstall, it saves you from manually identifying devices and typing out all the partitioning commands. A blessing if you value your wrists.
+
+* Arch Has Been Installed
+
+Beautiful. All that pain, and now I’m staring proudly at a black terminal with a few ominous warning messages bleeding into it. They might be errors. Who knows.
+It’s fine. It’s fine.
+
+At this point I felt like a Linux influencer ready to post a screenshot of my empty terminal and caption it “Minimalism.”
+
+Next steps:
+Update everything. Install some packages. Set up a desktop environment. Since I am also big on security, I wanted a Wayland based desktop.
+
+* Wayland: The Future of Linux Desktops
+
+Now, if you’re a Windows peasant, you probably have no idea what a Wayland desktop even is.
+
+Wayland is a modern display protocol that replaces the ancient X11 system Linux used for decades. In short: it is the layer that connects your apps to your screen.
+
+Why it is better than Windows:
+
+- Simplicity and efficiency: cleaner design, fewer bugs, less overhead.
+- Smooth graphics and input: lower latency, no tearing, smoother animations.
+- Security: apps cannot spy on each other’s input or windows by default.
+- Better HiDPI support: no more weird scaling per monitor.
+- Modern design: built for new GPUs and touch devices, not for dinosaurs.
+
+If you’ve ever worried about keyloggers on Windows, don’t. Wayland’s security model prevents that. Unless you misconfigure it. Then all bets are off.
+
+It is funny how every Linux YouTuber says “Wayland is the future” while recording on X11 because OBS can be picky. I get it. I am living in the future too, but with one foot in the past and both hands on my keyboard because my mouse driver just crashed.
+
+* Desktop Environments
+
+This deserves its own post, but here is the short version.
+
+Linux lets you install multiple desktops and switch freely between them, both X11 and Wayland based. There are two main philosophies:
+
+- Tiling window managers: auto arrange windows side by side, no overlap, keyboard driven.
+- Stacking (floating) window managers: overlapping windows, mouse driven, like Windows or macOS.
+
+**Examples:**
+
+- Tiling (X11): i3, bspwm
+- Tiling (Wayland): Sway, Hyprland
+- Stacking (X11): XFCE, LXDE
+- Stacking (Wayland): GNOME, KDE Plasma
+
+You can switch between them manually from the terminal or use a display manager like:
+
+- LightDM (lightweight)
+- GDM (for GNOME)
+- SDDM (for KDE)
+- LXDM (for LXDE)
+
+I installed GNOME, KDE, Sway, and Hyprland, just in case nostalgia strikes.
+In the end, I stuck with Sway. I don’t need fancy visuals. I want a fast, low resource, no BS environment.
+
+By default, Sway starts with nothing. No taskbar, no start menu, no app launcher.
+You decide what exists.
+And the best part: it never changes unless you change it.
+No random redesigns. No disappearing buttons. Pure freedom.
+
+Meanwhile, Windows updates rearrange your taskbar like a drunk interior designer.
+
+* Desktop Is Ready
+
+Next up: VPN and browser setup.
+
+I use ProtonVPN, which is not officially supported on Arch but has solid community packages. The GUI is simple, most features work fine. Then I installed Flatpak for sandboxed apps and used it to install my browser.
+
+It did not launch.
+Neither did VPN.
+
+After digging deeper, I found that Btrfs nested volumes and LUKS encryption can misbehave when your home directories are separate subvolumes. Also, LUKS was not prompting for a password at boot.
+
+Solution: format and reinstall.
+Yup.
+
+At this point, even Linus Tech Tips would have given up and called it “Arch moment.”
+
+* Reinstall #2
+
+This time:
+No nested Btrfs volumes.
+Everything works, Flatpak, VPN, browser, life.
+
+An entire day gone, but Arch was finally alive.
+
+I celebrated by staring at my terminal for five minutes like a proud parent who just watched their kid compile a kernel.
+
+* End of Day
+
+It was painful, confusing, and sometimes absurd. But it was mine.
+
+I built it.
+I broke it.
+I fixed it.
+I suffered.
+
+Somewhere out there, a Linux influencer is saying “Just read the wiki.”
+Meanwhile, I am the wiki now.
+
+And finally, I can say it with pride:
+**The adventure has begun.**
+
+
+
+
+
+
+
+
 The adventure has begun.
 
 nuked windows. installing arch.
