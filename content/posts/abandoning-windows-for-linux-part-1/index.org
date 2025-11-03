@@ -7,7 +7,7 @@
 #+FILETAGS: :windows:linux:os:arch:
 #+HUGO_AUTO_SET_LASTMOD: true
 #+EXPORT_FILE_NAME: index
-#+summary: After years of tinkering, tweaking, and tolerating Windows, I finally took the plunge: full Linux, no dual boot, no way back. This is the story of why I left Microsoft’s ecosystem, what I’m running toward, and what I’m (probably) breaking along the way.
+#+summary: Nuked Windows, embraced chaos, and installed Arch (twice). Learned that “manual install” means “pain”, discovered archinstall is the real hero, fought UEFI demons, and achieved enlightenment through Btrfs, Wayland, and two reinstallations. Now running a minimal desktop with maximum trauma and a newfound sense of superiority.
 #+HUGO_CUSTOM_FRONT_MATTER: :cover '((hidden . true) (hiddenInSingle . true) (hiddenInList . true))
 
 * The Adventure Has Begun
@@ -30,6 +30,12 @@ The 100% manual install depends heavily on your hardware and environment. No sin
 
 And heaven help you if your Wi‑Fi card doesn’t work out of the box. Thankfully, that wasn’t me. But I had my share of other misadventures.
 
+#+begin_quote
+"Arch Linux was first released on March 11, 2002 by Judd Vinet. It was inspired by the minimalist Linux distribution CRUX and built around the KISS (Keep It Simple, Stupid) philosophy."
+#+end_quote
+
+[[file:installing-arch.jpg]]
+
 * Day 1: Welcome to Hell (or UEFI)
 
 If you’ve been living under a rock like I did, you might not know that BIOS is old man tech now. The modern world runs on UEFI, which is like BIOS but with more attitude and more ways to break.
@@ -47,6 +53,12 @@ But no one ever asked the obvious question:
 Some systems support both, but newer ones usually support only UEFI.
 That was my first big lesson, and my first victory. My happiness did not last long.
 
+#+begin_quote
+"Unified Extensible Firmware Interface (UEFI) was introduced as a replacement for BIOS in the mid-2000s and became standard on consumer hardware around 2012."
+
+"Secure Boot was developed by the UEFI Forum and supported by Microsoft starting with Windows 8 in 2012 to prevent unauthorized bootloaders."
+#+end_quote
+
 * SATA Mode and the Hidden Menu from Hell
 
 Next obstacle: my HDD wasn’t being detected.
@@ -63,6 +75,14 @@ I felt like one of those Tech Guru YouTubers who pretends to know what they’re
 
 But I pressed on.
 
+#+begin_quote
+"Advanced Host Controller Interface (AHCI) was standardized by Intel in 2004 to enable features such as NCQ (Native Command Queuing) and hot-plugging for SATA drives."
+
+"Intel Rapid Storage Technology (RST) is a proprietary firmware interface designed to manage RAID and SSD caching; it often conflicts with Linux installers that expect AHCI."
+#+end_quote
+
+[[file:bios.jpg]]
+
 * Setting Up Internet
 
 Arch does not hold your hand here either.
@@ -74,6 +94,8 @@ You can connect through:
 - wpa_supplicant
 - native systemd networking
 
+  [[file:fighter.jpg]]
+
 I won’t spoil the fun for you. Researching all these is part of the Arch experience.
 But here’s the catch: when you’re installing from the ISO, you have to set it up every single time you reboot into the installer. I ended up using both iwd and netctl at different points, because of course I did.
 
@@ -84,6 +106,16 @@ I had to manually edit configuration files to fix it.
 Then I hit a “package not found” error. The databases were outdated or misconfigured. Another day, another learning curve.
 
 I swear every time I fixed one thing, Arch whispered, “Good, now break something else.”
+
+#+begin_quote
+"NetworkManager was first released in 2004 by Red Hat to simplify network configuration on Linux desktops."
+
+"wpa_supplicant was introduced in 2003 as the reference implementation for WPA and WPA2 wireless security."
+
+"The iwd (Internet Wireless Daemon) project was started by Intel in 2018 to provide a simpler, faster wireless stack for Linux."
+#+end_quote
+
+[[file:internet.jpg]]
 
 * Installing Arch (Round One)
 
@@ -112,6 +144,14 @@ If you copy your tiny snapshots to another machine, you cannot recover your file
 
 When you use the guided partition options in archinstall, it saves you from manually identifying devices and typing out all the partitioning commands. A blessing if you value your wrists.
 
+#+begin_quote
+"Btrfs, or B-tree File System, began at Oracle in 2007 as an advanced filesystem with copy-on-write (CoW), snapshots, and integrated RAID support."
+
+"It was merged into the Linux kernel mainline in version 2.6.29, released in March 2009."
+
+"Btrfs is one of the few Linux filesystems that provides checksummed metadata and built-in data integrity verification."
+#+end_quote
+
 * Arch Has Been Installed
 
 Beautiful. All that pain, and now I’m staring proudly at a black terminal with a few ominous warning messages bleeding into it. They might be errors. Who knows.
@@ -121,6 +161,10 @@ At this point I felt like a Linux influencer ready to post a screenshot of my em
 
 Next steps:
 Update everything. Install some packages. Set up a desktop environment. Since I am also big on security, I wanted a Wayland based desktop.
+
+#+begin_quote
+"Arch Linux uses a rolling-release model, meaning packages are continuously updated rather than released in fixed versions. This approach was formalized by the Arch Developers Team in 2007."
+#+end_quote
 
 * Wayland: The Future of Linux Desktops
 
@@ -139,6 +183,16 @@ Why it is better than Windows:
 If you’ve ever worried about keyloggers on Windows, don’t. Wayland’s security model prevents that. Unless you misconfigure it. Then all bets are off.
 
 It is funny how every Linux YouTuber says “Wayland is the future” while recording on X11 because OBS can be picky. I get it. I am living in the future too, but with one foot in the past and both hands on my keyboard because my mouse driver just crashed.
+
+#+begin_quote
+"Wayland was announced in 2008 by Kristian Høgsberg as a lightweight, modern replacement for the X Window System."
+
+"X11’s protocol was originally released in 1987 as part of Project Athena at MIT."
+
+"Wayland reached its 1.0 stable protocol specification in October 2012."
+#+end_quote
+
+[[file:des.jpg]]
 
 * Desktop Environments
 
@@ -173,6 +227,18 @@ No random redesigns. No disappearing buttons. Pure freedom.
 
 Meanwhile, Windows updates rearrange your taskbar like a drunk interior designer.
 
+#+begin_quote
+"Tiling window managers trace their origins back to the 1980s in systems like the Xerox Alto and early Lisp Machines, which featured automatic non-overlapping window layouts."
+
+"Modern tiling window managers such as dwm (2006), i3 (2009), and bspwm (2013) follow minimalist Unix philosophies, using text-based configuration and keyboard-driven control instead of traditional GUIs."
+
+"Wayland-native tiling environments like Sway (2018) and Hyprland (2021) evolved to replicate or expand on i3-style management using the newer Wayland protocol."
+
+"Tiling window managers emphasize productivity, reproducibility, and low resource usage, often used by developers and system administrators who prefer full keyboard workflows."
+#+end_quote
+
+[[file:achievement.jpg]]
+
 * Desktop Is Ready
 
 Next up: VPN and browser setup.
@@ -199,6 +265,12 @@ An entire day gone, but Arch was finally alive.
 
 I celebrated by staring at my terminal for five minutes like a proud parent who just watched their kid compile a kernel.
 
+#+begin_quote
+"Flatpak was created in 2015 by Alexander Larsson of Red Hat to provide a sandboxed application framework for Linux desktop software."
+
+"LUKS (Linux Unified Key Setup) was first implemented in 2004 to standardize disk encryption on Linux systems."
+#+end_quote
+
 * End of Day
 
 It was painful, confusing, and sometimes absurd. But it was mine.
@@ -214,164 +286,4 @@ Meanwhile, I am the wiki now.
 And finally, I can say it with pride:
 **The adventure has begun.**
 
-
-
-
-
-
-
-
-The adventure has begun.
-
-nuked windows. installing arch.
-
-the 100% manual install is extremely painfull, you will need to type hundreds of commands yourself and edit hundreds of config files. i think this is too much and it is unnecessary. this is where i draw the line. the nice middle ground i have found is to use archinstall command and select minimal preset (or dont select any preset).
-
-The craziest thing is that if you look at arch wiki or arch guides, it is very likely that you won't see any mentions of archinstall command. Or maybe I'm just stupid. Anyway, this has led me in the past to thinking that 100% manual install is the only way, and hardcore struggling with it.
-
-The other thing new people won't realize when doing 100% manual arch install, is that it depends heavily on your hardware and environment. That given, it can be hard to follow any guide if it doesn't consider every possibility. One of the very first things installing arch that you will do is setting and formatting your hard drive. The commands look slightly different for hdd vs sdd for example. then arch needs internet connection to make the install. here you will need to either set it up manually for wi-fi or ethernet. there are multiple ways of doing that and it depends on what networking stack you run and what packages you have installed. But what if you don't have ethernet cable and always work on wifi, and then the built in wifi drivers won't work? thankfully this hasnt happened to me, but here are some things that did happen:
-
-
-* Day 1
-
-If you have been living under the rock like I did, you might not be aware that BIOS is an old mans things now and the world has moved to UEFI, a modern replacement for BIOS. For the longest time I thought I would not be ever able to install linux on my laptop, becouse whenever I burned linux image to the usb, it was never recognized at boot. I have browsed the internet looking for solution and there were other people having this issue for my laptop model. So from what they were saying, there was some issue in my model that was making it impossible to boot anything from usb. There were even some people saying it is some sort of conspiracy to prevent people from installing linux. I have tried all the solutions I have found and nothing was working. To feel better about myself I would like to mention that there were also other people there who tried everything and nothing has worked for them. So someone apparently figured out that for some reason the USB port is loaded later than when the boot sequence reads it and the only solution would be to buy some sort of a special device to do something so that the usb gets recognized before boot. (I'm paraphrasing from memory to give you a general idea). I was **this** close to buying that thing. No one has ever asked there if the people who have that problem are booting image with partition scheme formatted as MBR or GPT.
-
-MBR is for BIOS. GPT is for UEFI.
-
-Some hardware supports only BIOS. Some support both, the newest ones most likely only support UEFI.
-
-
-So here we go, the first log that I had to jump over, but my happiness wasn't long lived. There were more things to figure out.
-
-Then I had to disable secure boot, I chose this option, it is also possible to sign your boot file on your usb from inside BIOS (I will keep calling it that way)
-
-So I was all happy on my way to install arch, only to find out that my HDD is not being detected. After some extensive googling I have found out about SATA mode, which is how your motherboard communicates with your storage drives. Turns out I have a version of RST and it needs to be AHCI. Solution: Change BIOS setting. Easy. Not. The setting is hidden in my BIOS and I had to find a special key combination to have the possibility of changing it.
-
-* setting up internet connection
-
-So here you have a few options, you can do it through:
-- iwd
-- netctl
-- NetworkManager (if you chose to install it)
-- wpa_supplicant
-- native systemd
-
-  Now, I could explain to you all of those, but I don't want to ruin the fun of having to research all of it for you. Now is also probably the time when people start realizing what they are setting themselves up for.
-
-  On ISO boot i did it both with iwd and netctl. Because I had to restart the process few times. And guess what, you will need to set it up each time you restart the installer.
-
-  Ended up using NetworkManager after install so that it remembers my connections. It is possible to set that up without NetworkManager by editing config files, but I was really done at that point.
-
-  I might have had some issues with missing packets due to DNS issues, had to set DNS manually by editing config file.
-
-  Also I might have had some issues with package manager not being able to find packages due to out of date or misconfigured package databases.
-
-* Installing
-
-Anyhow, im going through the setting in the installer, setting up user profiles, leaving root passwordless, setting up LUKS encryption. I chose BTRFS file system. If you have also been living under a rock, you will love this.
-
-Here is a short overview of what BTRFS filesystem is:
-
-** Btrfs (B-tree File System) is a modern Linux file system designed for reliability, scalability, and advanced features.
-
-- Copy-on-write (CoW): When data changes, Btrfs writes new copies instead of overwriting, which enables snapshots and versioning.
-
-- Snapshots & subvolumes: You can make instant, space-efficient snapshots of your system or divide it into logical sub-volumes.
-
-- Checksums: Every data block and metadata block is verified for integrity, detecting and correcting bit-rot.
-
-- RAID support: Built-in support for RAID 0, 1, 10, 5, and 6 modes without external tools.
-
-- Efficient storage: Supports compression, deduplication, and online resizing.
-
-- With compression enabled, everything is compressed by default, so that you can store more with less.
-
-*
-Neat, isn't it?
-
-What isn't always clearly stated, is that the snapshots don't contain actual data. So if you copy your tiny snapshots to a different machine you can't recover your files there, unless you move entire partition.
-
-Worth knowing sooner than later.
-
-
- When you figure out how to set the options for the partitions, that saves you having to know all the commands and type them out and find out how your storage drives are called.
-
-* Arch has been installed.
-Beutiful. All of this and now I can stare at my incredible console terminal with a few warnings (they might be errors, I have no idea) that bleeded into it for some reason and I have no idea what they mean. Noice.
-
-So now its time to run update everything and install some packages. And also install a desktop environment. Since I am also interested in security, into which this blog might branch out at some point. I want to use wayland based desktop.
-
-Now all of you windows peasants will have no idea what a wayland desktop is and what you are missing out on.
-
-Wayland is a modern display protocol used by Linux desktops. It replaces the older X11 system that has powered Linux graphics for decades. In simple terms, it’s the layer that connects your apps to your screen—handling windows, input, and drawing.
-
-Why it’s considered better than Windows desktop:
-
-- Simplicity and efficiency:
-  Wayland removes old, complicated parts of X11. It has a much cleaner design with less overhead and fewer bugs or hacks needed for smooth performance.
-
-- Smooth graphics and input:
-  Apps can talk directly to the compositor (like GNOME’s Mutter or KDE’s KWin) for rendering, which means lower latency, less tearing, and smoother animations—great for gaming and high-refresh displays.
-
-- Security and isolation:
-  Wayland doesn’t let apps spy on each other’s input or windows by default. This makes it more secure than both X11 and Windows’ traditional desktop model.
-
-- Better multi-DPI and HiDPI support:
-  Scaling and per-monitor DPI are handled cleanly, unlike the patchwork scaling system on Windows.
-
-- Fewer legacy constraints:
-  Because it’s newer, Wayland isn’t burdened by 30 years of backward compatibility. It’s designed for modern GPUs, touchscreens, and hybrid devices.
-
-If you were ever worried about keyloggers on windows you won't have to worry about that under wayland. (Unless you misconfigure it)
-
-* Desktop environment
-
-Now this deserves its own article, but meanwhile let's go quickly over it.
-
-In Linux you can have multiple desktop environments installed and switch between them. You can have X11 or wayland based. Now, there is a concept in Linux world, about tiling and stacking windows systems.
-
-- Tiling window manager: Automatically arranges windows side-by-side without overlap, filling the screen efficiently and controlled mainly by keyboard.
-
-- Stacking (floating) window manager: Lets windows overlap freely like on Windows or macOS, controlled mainly by mouse.
-
-Tiling window managers can be a great solution for power users.
-
-Under each section there are different desktops to choose from. Here is a tiny example:
-
-** Tiling:
-
-- X11: i3, bspwm
-
-- Wayland: Sway, Hyprland
-
-** Stacking:
-
-- X11: XFCE, LXDE
-
-- Wayland: GNOME, KDE Plasma
-
-
-* Switching between them
-It is possible to either just launch whatever desktop you want to currently use from the terminal to which your system boots by default, or setup a desktop display manager, which will let you switch between visually.
-
-Here are some examples:
-- LightDM – lightweight and common
-- GDM – used by GNOME
-- SDDM – used by KDE Plasma
-- LXDM – used by LXDE
-
-
-I have installed both GNOME and KDE for if I ever get nostalgic and Sway and Hyprland. Ended up using Sway because I don't care about the fancy visuals, all I need is a very fast, very low resource no BS desktop.
-
-It is also possible to fully customize everything about your desktop. sway starts with nothing by default.
-
-no task bar. no start menu button, now way to launch applcations. you get to decide which you want and how you want it to be.
-
-Getting tired about new windows release changing your UI? That will never happen again here. And the ebst thing is that it is fully customizable.
-
-* Desktop is ready.
-Next step, setting a VPN. I use proton-vpn which isn't officially supported on arch but there are community made packages. The UI is very simple but most of the functionality is there. It took me some time to see whats available and how it works. I have also installed flatpak which is a sandboxed environment and installed by internet browser through it. It wasn't launching. Also had problems with VPN. Turns out BTRFS supports nested volumes, but there are issues when users home folders are under separate BTRFS volumes. Also the LUKS was not working for some reason, it never asked me for a password when booting. Solution? Format and reinstall...
-
-* Reinstalled Arch without nested BTRFS volumes.
-
-Flatpak works, VPN works, had to configure everything again. An entire day has passed by.
+[[file:arch-installed.jpg]]
