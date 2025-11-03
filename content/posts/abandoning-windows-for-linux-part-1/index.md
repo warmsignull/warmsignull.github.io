@@ -3,6 +3,7 @@ title = "Abandoning Windows for Linux - Part 1"
 date = 2025-11-03
 lastmod = 2025-11-03T13:56:56-07:00
 slug = "abandoning-windows-for-linux-part-1"
+summary = "Nuked Windows, embraced chaos, and installed Arch (twice). Learned that “manual install” means “pain”, discovered archinstall is the real hero, fought UEFI demons, and achieved enlightenment through Btrfs, Wayland, and two reinstallations. Now running a minimal desktop with maximum trauma and a newfound sense of superiority."
 tags = ["windows", "linux", "os", "arch"]
 draft = false
 [cover]

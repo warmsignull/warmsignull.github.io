@@ -7,7 +7,7 @@
 #+FILETAGS: :windows:linux:os:arch:
 #+HUGO_AUTO_SET_LASTMOD: true
 #+EXPORT_FILE_NAME: index
-#+summary: Nuked Windows, embraced chaos, and installed Arch (twice). Learned that “manual install” means “pain”, discovered archinstall is the real hero, fought UEFI demons, and achieved enlightenment through Btrfs, Wayland, and two reinstallations. Now running a minimal desktop with maximum trauma and a newfound sense of superiority.
+#+HUGO_SUMMARY: Nuked Windows, embraced chaos, and installed Arch (twice). Learned that “manual install” means “pain”, discovered archinstall is the real hero, fought UEFI demons, and achieved enlightenment through Btrfs, Wayland, and two reinstallations. Now running a minimal desktop with maximum trauma and a newfound sense of superiority.
 #+HUGO_CUSTOM_FRONT_MATTER: :cover '((hidden . true) (hiddenInSingle . true) (hiddenInList . true))
 
 * The Adventure Has Begun

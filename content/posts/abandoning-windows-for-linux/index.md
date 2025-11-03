@@ -197,4 +197,6 @@ Follow me on my journey. Let’s do it together!
 May my configs be readable, my kernels be stable, and my coffee supply infinite.
 I use Arch, btw.
 
+[Read Part 1 of the journey →](/posts/abandoning-windows-for-linux-part-1/)
+
 {{< figure src="/zelda.jpg" >}}
