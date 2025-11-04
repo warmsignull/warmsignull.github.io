@@ -158,7 +158,7 @@ He managed this productivity through his elaborate paper-based note system, the 
 > — Niklas Luhmann
 
 This is how it looked for him:
-![](/zettel.jpg)
+![](zettel.jpg)
 
 Needless to say, it’s much easier and more powerful when combined with technology.
 If this method let Luhmann produce that much by hand, imagine what happens when you pair it with Emacs, Org-roam, and automation.
