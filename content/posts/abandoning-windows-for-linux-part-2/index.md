@@ -1,7 +1,7 @@
 +++
 title = "Abandoning Windows for Linux - Part 2"
 date = 2025-11-04
-lastmod = 2025-11-04T10:44:17-07:00
+lastmod = 2025-11-04T10:46:49-07:00
 slug = "abandoning-windows-for-linux-part-2"
 tags = ["windows", "linux", "os", "arch"]
 draft = false
