@@ -1,17 +1,11 @@
 [[items]]
-title = "Bug Wrangler 3000"
-summary = "A tiny CLI that turns production bugs into motivational quotes before you fix them."
-link = "https://github.com/warmsignull/bug-wrangler-3000"
-tags = ["go", "cli", "automation"]
+title = "Diceware Passphrase Generator"
+summary = "Python CLI for generating secure Diceware passphrases, bundled with scripts to download and verify the official EFF wordlists and support custom lists."
+link = "https://github.com/warmsignull/diceware-gen"
+tags = ["python", "cli", "security"]
 
 [[items]]
-title = "Night Owl Notebook"
-summary = "Personal knowledge base powered by Hugo shortcodes and way too many emojis."
-link = "https://warmsignull.github.io/night-owl-notebook"
-tags = ["hugo", "notes", "design"]
-
-[[items]]
-title = "Philosopher's Patch"
-summary = "VS Code theme that makes every TODO feel like a moral dilemma."
-link = "https://marketplace.visualstudio.com/items?itemName=warmsignull.philosophers-patch"
-tags = ["vscode", "theme", "vibes"]
+title = "Desktop Launcher"
+summary = "Curses-based desktop session launcher that reads a JSON config, detects installed environments, and lets you launch, install, or manage them from one UI."
+link = "https://github.com/warmsignull/desktop"
+tags = ["python", "linux", "tui"]
