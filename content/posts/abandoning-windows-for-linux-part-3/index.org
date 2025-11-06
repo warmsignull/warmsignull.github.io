@@ -3,43 +3,44 @@
 #+HUGO_SECTION: posts
 #+HUGO_SLUG: abandoning-windows-for-linux-part-3
 #+HUGO_BUNDLE: abandoning-windows-for-linux-part-3
-#+HUGO_TAGS: #+FILETAGS: #+HUGO_DRAFT true
-#+FILETAGS: :#+FILETAGS::#+HUGO_DRAFT:true:
+#+HUGO_TAGS: #+FILETAGS: #+HUGO_DRAFT true #+FILETAGS
+#+FILETAGS: :#+FILETAGS::#+HUGO_DRAFT:true:#+FILETAGS:
 #+HUGO_DRAFT: true
 #+HUGO_AUTO_SET_LASTMOD: true
 #+EXPORT_FILE_NAME: index
 
-* Day 3
+* Day 3 – Doom, Vim, and the Eternal Return
 
-Default emacs keybindings are very ancient and in my opinion far from efficient. Also setting everything from scratch when you have no idea what you are doing is an extreme pain. I have tried Doom yesterday which is preconfigured emacs with some nicities. Today after messing up all the setting past the point of no return I have nuked doom and emacs and started from scratch.
+Default Emacs keybindings are ancient. I’m pretty sure they were designed back when dinosaurs still roamed MIT’s hallways. Efficient? Not really. Finger-twisting? Absolutely. Setting everything up from scratch when you barely know what’s going on feels like trying to build a spaceship out of IKEA parts, but without the manual.
 
-If learning Arch and emacs by itself was not enough, I have also decided to learn vim to use doom in evil mode. I highly prefer the shortcuts from doom emacs. And i highly prefer keybinding of vim over vanilla emacs for editing text.
+Yesterday, I tried Doom Emacs, a preconfigured flavor of Emacs with plenty of nice quality-of-life improvements. Today, after somehow breaking every setting beyond repair, I decided to nuke Doom and regular Emacs alike. Sometimes you just have to wipe the slate clean… or, in my case, the entire hard drive of my sanity.
 
-My current vim knowledge was almost non existand. I knew that hjkl is used for moving around. :q for quitting, :w for saving and :wq for quitting after saving. Also I knew about i/ESC.
+As if learning Arch Linux and Emacs weren’t enough, I also decided to learn Vim, so I could use Doom’s evil mode. The irony is not lost on me: I’m willingly entering evil mode. But I genuinely prefer Vim keybindings for editing text, they’re oddly satisfying once you stop crying over :q!.
 
-So I spent most of the day doing that and also exploring different components of org-mode ecosystem.
+My Vim knowledge going in? Minimal. I knew hjkl moved the cursor, :q quits, :w saves, :wq saves and quits, and i toggles insert mode, while ESC goes out of it. That’s it. Basically baby’s first Vim.
+
+So most of my day went into learning Vim basics and exploring the whole Org-mode ecosystem, which I can already tell is a rabbit hole that never ends.
+
+To relax, I decided to test gaming on Linux. I played Stick It To The Stickman on Steam because it’s small, chaotic, and already performs badly on Windows, so I figured it’d be a fair test. It launched perfectly, no tweaking needed. Even better, it ran smoother than on Windows. Unity games apparently love Linux now. Who knew?
 
 
-At the end of the day I wanted to see how does gaming look like currently on Linux. Played Stick It To The Stickman on Steam. I chose this game as a first one due to small install size and already poor performance due to lack of optimization i imagine. Its a pretty fun game, solid gameplay)
+* Day 4 – The Great Bracket Massacre
 
-Launched it after installing and it worked without any issues! Looks like Unity games are very well supported by default. The performance was actually better than on windows, I had only one or two tiny hangs, compared to multiple longer ones of Windows.
+I nuked Emacs again. My configs turned into an undecipherable mess. ELISP is interesting, but the sheer number of parentheses makes me dizzy. There’s a classic joke: Hackers once stole a top-secret codebase written entirely in Lisp. Fortunately, they only got away with the last 1000 lines of all closing parentheses.
 
-* Day 4
+So I decided to ditch Doom Emacs for now and try building a custom Emacs setup from scratch. Instead of spending weeks learning Doom’s magic, I’ll make my own magic. Or at least summon a friendly error message.
 
-Nuked all emacs... ended up with undecipherable mess in configs. ELISP looks nice, but im not a fan of the brackets. As the joke goes, once hackers stole a top secret codebase written entirelly in LISP. Thankfully, they only stole the last 1000 lines of the file which were all closing ).
+This time, I brought in a secret weapon: Codex, my AI assistant, to help generate Emacs configs. Don’t get me wrong, customizing Emacs manually is noble and all, but I’d like a working setup this decade.
 
-So I decided to go custom emacs instead of doom emacs. Instead of figuring doom specific setup, I will just do it all from scratch.
+Then I discovered something truly wild: you can configure Emacs using Org-mode. Basically, you write your entire config in an .org file, mixing documentation and code in one place. When you save it, it automatically exports the actual config file. It’s beautiful. It’s cursed. And it makes me wonder what an entire codebase written this way would look like. Probably like a Lovecraftian text adventure. It is possible to use it for any config file or programming language.
 
-I also have a secret helper at my side this time. I am using codex to help me generate emacs config. Don't get me wrong, I have nothing about customizing emacs by hand. But I would like to have a nice custom environment to work in in days, not years.
+* Day 5 – The Doom Strikes Back
 
-Found out that org-mode can be used for config files. So you write your config file in .org file, where you can have documentation and comments interleaved with your code/script, and then whenever you save the file it creates a separate output which is just the config, removing everything else. I wonder how would it work when writting an entire codebase this way. Probably horribly.
+Today I continued working on my custom Emacs setup. It went… badly. I didn’t keep a Git repo, so when things broke beyond repair, I had nothing to roll back to. In the end, I had no choice but to nuke everything again. At this point, I’m starting to think “nuke and start over” should be in my daily cron job.
 
-* Day 5
+This time, I crawled back to Doom Emacs, tail between my parentheses. The silver lining? I finally understand a lot more of what’s happening under the hood. The dark cloud? I’ve spent multiple full days on this and have nothing to show for it except muscle memory for rm -rf.
 
-I have continued working on vanlla emacs setup, but it went awry and I didn't keep a git repo... Since figuring out everything that went wrong would take a horrible amount of time and i have no working version to rewert to, I have decided to... you guessed... nuke everything and start from scratch.
+Still, I’m trying to stay optimistic. All this setup pain will pay off later, I tell myself. Probably. Hopefully. Maybe.
 
-This time using Doom Emacs again.
+I’ve also started laying the foundations for my Org-roam brain, moving my scattered notes into Org-journal. Slowly but surely, my chaos of text files is turning into something structured, something almost resembling knowledge. If nothing else, I’ve definitely mastered the art of starting from scratch.
 
-The good side is that I'm starting to get a better understanding on how it all works. The bad side is that I have spent entire work days on this so far and I have nothing to show for it. I am starting to wonder whether all of this is worth it and I am trying to remind myself that all this setup, suffering and wasted time will pay out in the future.
-
-I have started laying out the base of org-roam brain and moved my old notes i had scattered in random files into org-journal.
