@@ -1,0 +1,45 @@
+#+TITLE: Abandoning Windows for Linux - Part 3
+#+DATE: 2025-11-05
+#+HUGO_SECTION: posts
+#+HUGO_SLUG: abandoning-windows-for-linux-part-3
+#+HUGO_BUNDLE: abandoning-windows-for-linux-part-3
+#+HUGO_TAGS: #+FILETAGS: #+HUGO_DRAFT true
+#+FILETAGS: :#+FILETAGS::#+HUGO_DRAFT:true:
+#+HUGO_DRAFT: true
+#+HUGO_AUTO_SET_LASTMOD: true
+#+EXPORT_FILE_NAME: index
+
+* Day 3
+
+Default emacs keybindings are very ancient and in my opinion far from efficient. Also setting everything from scratch when you have no idea what you are doing is an extreme pain. I have tried Doom yesterday which is preconfigured emacs with some nicities. Today after messing up all the setting past the point of no return I have nuked doom and emacs and started from scratch.
+
+If learning Arch and emacs by itself was not enough, I have also decided to learn vim to use doom in evil mode. I highly prefer the shortcuts from doom emacs. And i highly prefer keybinding of vim over vanilla emacs for editing text.
+
+My current vim knowledge was almost non existand. I knew that hjkl is used for moving around. :q for quitting, :w for saving and :wq for quitting after saving. Also I knew about i/ESC.
+
+So I spent most of the day doing that and also exploring different components of org-mode ecosystem.
+
+
+At the end of the day I wanted to see how does gaming look like currently on Linux. Played Stick It To The Stickman on Steam. I chose this game as a first one due to small install size and already poor performance due to lack of optimization i imagine. Its a pretty fun game, solid gameplay)
+
+Launched it after installing and it worked without any issues! Looks like Unity games are very well supported by default. The performance was actually better than on windows, I had only one or two tiny hangs, compared to multiple longer ones of Windows.
+
+* Day 4
+
+Nuked all emacs... ended up with undecipherable mess in configs. ELISP looks nice, but im not a fan of the brackets. As the joke goes, once hackers stole a top secret codebase written entirelly in LISP. Thankfully, they only stole the last 1000 lines of the file which were all closing ).
+
+So I decided to go custom emacs instead of doom emacs. Instead of figuring doom specific setup, I will just do it all from scratch.
+
+I also have a secret helper at my side this time. I am using codex to help me generate emacs config. Don't get me wrong, I have nothing about customizing emacs by hand. But I would like to have a nice custom environment to work in in days, not years.
+
+Found out that org-mode can be used for config files. So you write your config file in .org file, where you can have documentation and comments interleaved with your code/script, and then whenever you save the file it creates a separate output which is just the config, removing everything else. I wonder how would it work when writting an entire codebase this way. Probably horribly.
+
+* Day 5
+
+I have continued working on vanlla emacs setup, but it went awry and I didn't keep a git repo... Since figuring out everything that went wrong would take a horrible amount of time and i have no working version to rewert to, I have decided to... you guessed... nuke everything and start from scratch.
+
+This time using Doom Emacs again.
+
+The good side is that I'm starting to get a better understanding on how it all works. The bad side is that I have spent entire work days on this so far and I have nothing to show for it. I am starting to wonder whether all of this is worth it and I am trying to remind myself that all this setup, suffering and wasted time will pay out in the future.
+
+I have started laying out the base of org-roam brain and moved my old notes i had scattered in random files into org-journal.
