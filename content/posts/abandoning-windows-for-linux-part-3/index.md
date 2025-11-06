@@ -3,6 +3,7 @@ title = "Abandoning Windows for Linux - Part 3"
 date = 2025-11-05
 lastmod = 2025-11-05T17:33:20-07:00
 slug = "abandoning-windows-for-linux-part-3"
+summary = "After several rounds of installing, breaking, and nuking both Emacs and Doom Emacs, I somehow ended up learning Vim, Lisp jokes, and the art of starting from scratch. Between building configs, experimenting with Org-mode for everything, and testing games on Linux (which surprisingly ran better than Windows), I spent more time tweaking than doing—but I’m finally starting to understand how it all fits together. Pain, parentheses, and progress."
 tags = ["windows", "linux", "os", "arch"]
 draft = false
 [cover]
