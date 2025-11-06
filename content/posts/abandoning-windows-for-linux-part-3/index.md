@@ -1,19 +1,17 @@
-#+TITLE: Abandoning Windows for Linux - Part 3
-#+DATE: 2025-11-05
++++
+title = "Abandoning Windows for Linux - Part 3"
+date = 2025-11-05
+lastmod = 2025-11-05T17:33:20-07:00
+slug = "abandoning-windows-for-linux-part-3"
+tags = ["windows", "linux", "os", "arch"]
+draft = false
+[cover]
+  hidden = true
+  hiddenInSingle = true
+  hiddenInList = true
++++
 
-#+HUGO_SECTION: posts
-#+HUGO_SLUG: abandoning-windows-for-linux-part-3
-#+HUGO_BUNDLE: abandoning-windows-for-linux-part-3
-#+HUGO_TAGS: windows linux os arch
-#+FILETAGS: :windows:linux:os:arch:
-#+HUGO_AUTO_SET_LASTMOD: true
-#+EXPORT_FILE_NAME: index
-#+HUGO_SUMMARY: After several rounds of installing, breaking, and nuking both Emacs and Doom Emacs, I somehow ended up learning Vim, Lisp jokes, and the art of starting from scratch. Between building configs, experimenting with Org-mode for everything, and testing games on Linux (which surprisingly ran better than Windows), I spent more time tweaking than doing—but I’m finally starting to understand how it all fits together. Pain, parentheses, and progress.
-#+HUGO_CUSTOM_FRONT_MATTER: :cover '((hidden . true) (hiddenInSingle . true) (hiddenInList . true))
-
-
-* Day 3 – Doom, Vim, and the Eternal Return
-
+## Day 3 – Doom, Vim, and the Eternal Return {#day-3-doom-vim-and-the-eternal-return}
 
 Default Emacs keybindings are ancient. I’m pretty sure they were designed back when dinosaurs still roamed MIT’s hallways. Efficient? Not really. Finger-twisting? Absolutely. Setting everything up from scratch when you barely know what’s going on feels like trying to build a spaceship out of IKEA parts, but without the manual.
 
@@ -28,7 +26,7 @@ So most of my day went into learning Vim basics and exploring the whole Org-mode
 To relax, I decided to test gaming on Linux. I played Stick It To The Stickman on Steam because it’s small, chaotic, and already performs badly on Windows, so I figured it’d be a fair test. It launched perfectly, no tweaking needed. Even better, it ran smoother than on Windows. Unity games apparently love Linux now. Who knew?
 
 
-* Day 4 – The Great Bracket Massacre
+## Day 4 – The Great Bracket Massacre {#day-4-the-great-bracket-massacre}
 
 I nuked Emacs again. My configs turned into an undecipherable mess. ELISP is interesting, but the sheer number of parentheses makes me dizzy. There’s a classic joke: Hackers once stole a top-secret codebase written entirely in Lisp. Fortunately, they only got away with the last 1000 lines of all closing parentheses.
 
@@ -38,7 +36,8 @@ This time, I brought in a secret weapon: Codex, my AI assistant, to help generat
 
 Then I discovered something truly wild: you can configure Emacs using Org-mode. Basically, you write your entire config in an .org file, mixing documentation and code in one place. When you save it, it automatically exports the actual config file. It’s beautiful. It’s cursed. And it makes me wonder what an entire codebase written this way would look like. Probably like a Lovecraftian text adventure. It is possible to use it for any config file or programming language.
 
-* Day 5 – The Doom Strikes Back
+
+## Day 5 – The Doom Strikes Back {#day-5-the-doom-strikes-back}
 
 Today I continued working on my custom Emacs setup. It went… badly. I didn’t keep a Git repo, so when things broke beyond repair, I had nothing to roll back to. In the end, I had no choice but to nuke everything again. At this point, I’m starting to think “nuke and start over” should be in my daily cron job.
 
@@ -47,4 +46,3 @@ This time, I crawled back to Doom Emacs, tail between my parentheses. The silver
 Still, I’m trying to stay optimistic. All this setup pain will pay off later, I tell myself. Probably. Hopefully. Maybe.
 
 I’ve also started laying the foundations for my Org-roam brain, moving my scattered notes into Org-journal. Slowly but surely, my chaos of text files is turning into something structured, something almost resembling knowledge. If nothing else, I’ve definitely mastered the art of starting from scratch.
-
