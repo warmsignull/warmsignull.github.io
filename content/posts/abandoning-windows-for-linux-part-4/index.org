@@ -1,0 +1,49 @@
+#+TITLE: Abandoning Windows For Linux - Part 4
+#+DATE: 2025-11-06
+#+HUGO_SECTION: posts
+#+HUGO_SLUG: abandoning-windows-for-linux-part-4
+#+HUGO_BUNDLE: abandoning-windows-for-linux-part-4
+#+HUGO_TAGS: #+FILETAGS: #+HUGO_DRAFT true #+FILETAGS
+#+FILETAGS: :#+FILETAGS::#+HUGO_DRAFT:true:#+FILETAGS:
+#+HUGO_DRAFT: true
+#+HUGO_AUTO_SET_LASTMOD: true
+#+EXPORT_FILE_NAME: index
+
+* Day 6
+Learning how to use org-agenda.
+
+I have moved entries from org-journal to org-roam-dailies so that I can have my journal connected to all my projects and knowledge.
+
+Created admin script utilities for giving users time based sudo permissions etc.
+
+* Day 7
+Started setting up social media accounts, then got distracted and found about how VPNs use virtual servers, which means that exit gate is in a different country than the one that you "connected" to and all the traffic is routed through there.
+
+This makes some VPNs sound like a scam, while some are trying to reassure me that this is a lack of transparency on their side, to me it sounds more like a scam, since the wording purposefully misinforms users and they are aware of it.
+
+Explored free hosting providers for various purposes. Also stumbled upon the idea of self-hosting custom email server, which sounds like a really fun project that I would like to do some day, but also a very complex project in that it has a lot of moving parts to it. A lot has to be done to make it secure and verifiable.
+
+Explored domain providers and alternative web protocols. That also deserves its own article at some point. Really got the research bug going today.
+
+Added a shortcut to insert backlinks to emacs org-roam mode and auto update them on save.
+
+Time to try out some games. Anno 1800 works, had to point Ghost Recon Breakpoint to use Uplay from Wildlands to make it work, as apparently Wildlands ships with its own Uplay app while Breakpoint doesn't. Had some stuttering in Breakpoint, I think it is because Arch is using swap memory for some reason even though there is more than enough RAM available. Downloaded lutris, seems like a pretty nice app to keep all your games in once place.
+
+* Day 8
+It is ridiculous how hard it is to stay private on the modern web. Websites blocking VPN, can't signup without phone number. Can't have two separate accounts to have a division between personal life and other projects without having two phone numbers. I have even considering paying for some VOIP number service. While I understand that there are bad actors out there, that doesn't mean that everyone who is using VPN has bad intentions. Automatically marking all VPN traffic as suspicious is not a solution in my opinion. Wouldn't it be better for the websites to analyze for few days or weeks what does the account do and then take action based on that?
+
+My morale suddenly boosted when I managed to create a tuta account by switching VPN to another location and clearing cache. Apparently now I have to wait up to 24h for manual approval of the account, which means that I can't continue with making other social media accounts.
+
+* Day 9
+Tuta still hasn't verified my account, ended up making an email with google which worked today. Created github account, diceware generator project.
+
+I am not even mad anymore. The experience of setting up social media accounts in 2025 was worth it just to see the madness. Captchas are memes at this point, I remember seeing websites years ago that were trying to come up with the most ridiculous captcha systems just as a joke. Now it is a reality. Facebook is asking me to record a video of me moving my head around.
+
+Made an account on X. Asked grok few prompts. Suddenly my X account got blocked. I didn't even manage to change the settings or post anything, just randomly blocked. Appealed.
+
+* Day 10
+New day, new beginning. I would like to have the blog done today and the first article across social media. Working on it using github pages and actions. Also working on adding emacs keybindings for org-to-hugo-github workflow. Added keybindings for creating new posts, starting and closing local hugo server, exporting article from org-mode to markdown, opening either local hugo website or finished published website.
+
+First article done.
+
+I really like the org workflow for writing articles. Also I am starting to get pretty comfortable using doom emacs in evil mode, combined with my sway desktop.
