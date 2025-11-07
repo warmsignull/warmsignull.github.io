@@ -8,7 +8,7 @@ every message.
 
 ## Email
 
-- [hello@warmsignull.com](mailto:hello@warmsignull.com)
+- [warmsignull@gmail.com](mailto:warmsignull@gmail.com)
 
 ## Other ways to connect
 

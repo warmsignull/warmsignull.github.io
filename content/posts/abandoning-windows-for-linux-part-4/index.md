@@ -1,20 +1,18 @@
-#+TITLE: Abandoning Windows for Linux - Part 4
-#+DATE: 2025-11-06
++++
+title = "Abandoning Windows for Linux - Part 4"
+date = 2025-11-06
+lastmod = 2025-11-06T00:00:00-07:00
+slug = "abandoning-windows-for-linux-part-4"
+summary = "Over these five days I transformed my workflow. I learned how to manage time and notes with Org-agenda, linked my journal to Org-roam, wrote admin scripts, fell into the VPN transparency rabbit hole, considered building my own mail server, and wrestled with the absurd verification hurdles of modern social media. By the end of the week, I had a working Hugo blog fully integrated with Emacs keybindings and a deeper appreciation for how messy, funny, and rewarding the digital world can be when you insist on doing things your own way."
+tags = ["windows", "linux", "os", "arch"]
+draft = false
+[cover]
+  hidden = true
+  hiddenInSingle = true
+  hiddenInList = true
++++
 
-#+HUGO_SECTION: posts
-#+HUGO_SLUG: abandoning-windows-for-linux-part-4
-#+HUGO_BUNDLE: abandoning-windows-for-linux-part-4
-#+HUGO_TAGS: windows linux os arch
-#+FILETAGS: :windows:linux:os:arch:
-#+HUGO_AUTO_SET_LASTMOD: true
-#+EXPORT_FILE_NAME: index
-#+HUGO_SUMMARY: Over these five days I transformed my workflow. I learned how to manage time and notes with Org-agenda, linked my journal to Org-roam, wrote admin scripts, fell into the VPN transparency rabbit hole, considered building my own mail server, and wrestled with the absurd verification hurdles of modern social media. By the end of the week, I had a working Hugo blog fully integrated with Emacs keybindings and a deeper appreciation for how messy, funny, and rewarding the digital world can be when you insist on doing things your own way.
-#+HUGO_CUSTOM_FRONT_MATTER: :cover '((hidden . true) (hiddenInSingle . true) (hiddenInList . true))
-
-
-
-
-* Day 6: Getting Organized with Org-Agenda
+## Day 6: Getting Organized with Org-Agenda {#day-6-getting-organized-with-org-agenda}
 
 Today was the first time I truly appreciated how powerful Org-mode can be once it starts making sense. I spent most of the day learning how to use org-agenda. It took some experimenting to understand how it pulls data from multiple files and converts them into one coherent daily overview. It felt like turning chaos into order.
 
@@ -22,7 +20,7 @@ I decided to migrate my journal entries from org-journal to org-roam-dailies, so
 
 To make the system even more useful, I wrote a few admin utility scripts. One of them grants users time-limited sudo permissions. The idea came from my constant need to run short-lived administrative tasks without leaving wide-open permissions lying around. Now I can elevate access for a few minutes, and it automatically expires. It is a small but satisfying improvement.
 
-* Day 7: VPN Deception and the Research Spiral
+## Day 7: VPN Deception and the Research Spiral {#day-7-vpn-deception-and-the-research-spiral}
 
 The plan was simple: create a few social media accounts for Warm Signull. That plan lasted about fifteen minutes before I fell into the VPN rabbit hole.
 
@@ -34,9 +32,9 @@ From there, I wandered into domain registrars, decentralized alternatives, and n
 
 To stay productive, I added a new Emacs function that inserts backlinks automatically in Org-roam and updates them whenever I save a file. It is a small automation, but it makes the writing flow smoother.
 
-I ended the evening with some gaming tests. Anno 1800 runs well. Ghost Recon Breakpoint was trickier. It needed to point it to the Uplay launcher from Wildlands to work because apparently only Wildlands ships with it. Once running, it stuttered slightly, probably because Arch decided to use swap memory even though plenty of RAM was free. Installed Lutris, which seems like the proper way to manage everything from one place.
+I ended the evening with some gaming tests. Anno 1800 runs well. Ghost Recon Breakpoint was trickier. It needed to point it to the Uplay launcher from Wildlands to work because apparently only Wildlands ships with it. Once running, it stuttered slightly, probably because Arch decided to use swap memory even though plenty of RAM was free. I installed Lutris, which seems like the proper way to manage everything from one place.
 
-* Day 8: Privacy is a Puzzle
+## Day 8: Privacy Is a Puzzle {#day-8-privacy-is-a-puzzle}
 
 The internet today feels like a maze designed to filter out anyone who values privacy. Most websites either block VPN connections outright or refuse to let you sign up without a phone number. Trying to maintain a clear boundary between personal and project accounts feels almost impossible without owning two phones.
 
@@ -46,9 +44,9 @@ Instead of treating all VPN traffic as dangerous, platforms could monitor new ac
 
 Still, I managed to create a Tuta account after switching VPN regions and clearing my browser cache. Progress, even if small. Now I have to wait up to twenty-four hours for manual verification. The waiting game begins.
 
-* Day 9: The Social Media Gauntlet
+## Day 9: The Social Media Gauntlet {#day-9-the-social-media-gauntlet}
 
-Tuta still had not approved my account, so I created a Gmail address instead. Today it worked instantly. I have registered on GitHub and started a small Diceware generator project to keep my coding streak alive.
+Tuta still had not approved my account, so I created a Gmail address instead. Today it worked instantly. I registered on GitHub and started a small Diceware generator project to keep my coding streak alive.
 
 The process of creating social media accounts in 2025 feels like an endurance test. Captchas have become self-parodies. Each one feels like a psychological experiment designed to test patience rather than verify humanity. Facebook demanded that I record a short video of myself moving my head around in circles. I half-expected it to ask for interpretive dance next.
 
@@ -56,7 +54,7 @@ I created an account on X and asked Grok a few questions just to test it. Moment
 
 At this point, frustration has turned into detached amusement. Watching the modern internet make everything harder feels almost educational.
 
-* Day 10: The Workflow Finally Clicks
+## Day 10: The Workflow Finally Clicks {#day-10-the-workflow-finally-clicks}
 
 A new day, a new attempt at progress. My goal today was to finish setting up the Warm Signull blog and publish the first post.
 
