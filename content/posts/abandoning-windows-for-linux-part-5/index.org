@@ -1,0 +1,25 @@
+#+TITLE: Abandoning Windows for Linux - Part 5
+#+DATE: 2025-11-07
+#+HUGO_SECTION: posts
+#+HUGO_SLUG: abandoning-windows-for-linux-part-5
+#+HUGO_BUNDLE: abandoning-windows-for-linux-part-5
+#+HUGO_TAGS: #+FILETAGS: #+HUGO_DRAFT true #+FILETAGS
+#+FILETAGS: :#+FILETAGS::#+HUGO_DRAFT:true:#+FILETAGS:
+#+HUGO_DRAFT: true
+#+HUGO_AUTO_SET_LASTMOD: true
+#+EXPORT_FILE_NAME: index
+
+* Day 11
+New article almost done, adding memes to it. Posted on github. I want to setup donations and post on other social media but i feel extremely sluggisg and cant concentrate today.
+
+* Day 12
+Making good progress with custom donation form through stripe and free cloudflare workers. Integrated with the website, test mode working.
+Made some improvements to the website.
+Live mode is also working now. Flagged my transaction as suspicious. Apparently I should set branding in stripe, but wonder if it would do the same for others. Might be a good idea to also add ko-fi as a backup support.
+
+So ko-fi charges you extra for what you can do yourself with stripe if you have the will and/or the know-how. The biggest benefit for ko-fi would be that it is already verified.
+
+* Day 13
+Today was interesting start. ProtonVPN stopped working for some reason. Again. Since i had kill switch on i have no access to the internet. switching in its config doesn't work and i can't launch the app. i really wish proton cli was still being supported. Had to figure out and locate my dummy cpn killswitch connection and turn it off, then updated with -Syu which fixed it.
+
+Meanwhile, DNS settings got messed up. While i was working on that my laptop has power off and didn't want to switch on. After some time it finally managed to switch on and my BIOS settings have been reset.
