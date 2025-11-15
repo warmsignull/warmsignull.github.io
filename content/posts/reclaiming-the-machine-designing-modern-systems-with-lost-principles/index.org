@@ -1,0 +1,142 @@
+#+TITLE: Reclaiming the Machine: Designing Modern Systems with Lost Principles
+#+DATE: 2025-11-14
+#+HUGO_SECTION: posts
+#+HUGO_SLUG: reclaiming-the-machine-designing-modern-systems-with-lost-principles
+#+HUGO_BUNDLE: reclaiming-the-machine-designing-modern-systems-with-lost-principles
+#+HUGO_TAGS: computing programming systems metaprogramming
+#+FILETAGS: :computing:programming:systems:metaprogramming:
+#+HUGO_DRAFT: false
+#+HUGO_AUTO_SET_LASTMOD: true
+#+EXPORT_FILE_NAME: index
+
+[[file:index.png]]
+
+* Reclaiming the Machine
+After studying the Lost Wonders of Computing, it is tempting to grieve
+but grief is not the point. The point is reclamation.
+
+Many of those ancient ideas are not gone; they are simply fragmented across modern systems.
+We can rebuild a living, introspective, personal machine again by design.
+
+This is how.
+
+* Principle 1: Liveness and Interactivity
+Then: Lisp Machines and Smalltalk let you patch a running system in real time.
+Now:
+- Clojure keeps the spirit alive through its REPL driven workflow.
+- Emacs Lisp turns your editor into a live environment.
+- Common Lisp (SBCL) still lets you redefine and inspect any function.
+- Python notebooks and Clojure nREPL revive the idea in data science.
+
+Reclaim it:
+Use languages and editors that support incremental evaluation.
+Program inside your running system, not outside of it.
+
+* Principle 2: Code as Data
+Then: Homoiconicity was normal.
+Now:
+- Clojure macros and Rust proc macros bring structured metaprogramming back.
+- Julia exposes its AST for runtime transformation.
+- Elixir embeds macros that feel like Lisp with better ergonomics.
+
+Reclaim it:
+Pick tools that expose their syntax tree.
+Stop generating strings and start transforming structures.
+
+* Principle 3: Total Introspection
+Then: Everything could be inspected.
+Now:
+- Python inspect and dir mimic the idea at a shallow level.
+- Erlang and Elixir introspection and hot code reloads are closer in spirit.
+- Emacs Lisp lets you trace live function calls interactively.
+
+Reclaim it:
+Prefer environments where runtime state is visible and mutable.
+Treat introspection as a first class debugging tool.
+
+* Principle 4: Persistence as a Feature
+Then: Lisp images did not die; they slept.
+Now:
+- Smalltalk (Pharo, Squeak) still use image based persistence.
+- NixOS brings reproducibility through declarative state.
+- SQLite and serialization can simulate orthogonal persistence.
+- Guix System snapshots entire user environments.
+
+Reclaim it:
+Design systems that save state naturally instead of resetting on exit.
+A REPL snapshot, a serialized world, a persisted graph are all valid paths.
+
+* Principle 5: Extensibility as a Default
+Then: Users were expected to rewrite their tools.
+Now:
+- Emacs, Neovim with Lua, and the Blender Python API carry this torch.
+- Godot GDScript and Hyprland configs make modification part of culture.
+- The Unix philosophy of pipes, text, and composition still echoes the concept.
+
+Reclaim it:
+Refuse closed systems.
+Adopt platforms designed for user extension, not vendor control.
+
+* Principle 6: Simplicity through Completeness
+Then: The whole machine could fit in one head.
+Now:
+- Plan 9 and Oberon System 3 demonstrate radical minimalism.
+- Zig, Nim, and Carp revisit self hosting and conceptual clarity.
+- Scheme (Racket, Chez) keeps conceptual integrity intact.
+
+Reclaim it:
+Favor systems whose entire design can be read and understood.
+Seek coherence instead of layers of abstraction.
+
+* Principle 7: Expressive Power over Verbosity
+Then: Lisp and APL were microscopic yet vast.
+Now:
+- BQN and J revive array language expressiveness.
+- Fennel and Janet reimagine small Lisps for scripting.
+- Carp applies Lisp macros to high performance systems programming.
+
+Reclaim it:
+Choose languages that compress meaning.
+Elegance is compression without loss.
+
+* Principle 8: Reflective Toolchains
+Then: Compilers were editable objects.
+Now:
+- Racket has a programmable macro expander.
+- Clang AST tools allow limited metaprogramming in C++.
+- Nim exposes parts of its compiler internals for transformation.
+
+Reclaim it:
+Demand transparency from your compilers.
+If you cannot see how it works, do not trust it as part of your core.
+
+* Principle 9: Message Passing Architectures
+Then: Objects talked by message, not by call.
+Now:
+- Erlang and Elixir keep pure message passing with fault isolation.
+- Akka, Ray, and actor frameworks reinvent it for clusters.
+- WebAssembly components may restore this purity.
+
+Reclaim it:
+Think in conversations, not calls.
+Design modules that exchange messages instead of sharing memory.
+
+* Principle 10: Personal Intimacy with the Machine
+Then: The user was part of the system.
+Now: We live behind sandboxes, APIs, and abstraction walls.
+
+Reclaim it:
+- Customize your editor, shell, and window manager.
+- Use tools you can open, read, and patch.
+- Treat your machine as a partner again.
+
+* Closing Reflection
+We do not need to rebuild the 1980s.
+We simply need to stop forgetting what they solved.
+
+Every time we open a REPL, hack a running process, or live reload a system,
+we touch the same ideas that powered Lisp Machines and Smalltalk images.
+
+Reclaiming the machine is not nostalgia.
+It is continuity with the original dream of computing
+to build systems that think with us, not for us.
