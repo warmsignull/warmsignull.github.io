@@ -15,37 +15,6 @@
           </ul>
         {{ end }}
       </div>
-      {{ $coverHidden := false }}
-      {{ $coverData := .Params.cover }}
-      {{ if $coverData }}
-        {{ $hidden := false }}
-        {{ if isset $coverData "hidden" }}
-          {{ $hidden = index $coverData "hidden" }}
-        {{ end }}
-        {{ $hiddenInSingle := false }}
-        {{ if isset $coverData "hiddenInSingle" }}
-          {{ $hiddenInSingle = index $coverData "hiddenInSingle" }}
-        {{ else if isset $coverData "hiddeninsingle" }}
-          {{ $hiddenInSingle = index $coverData "hiddeninsingle" }}
-        {{ end }}
-        {{ $coverHidden = or $hidden (and $.IsPage $hiddenInSingle) }}
-      {{ end }}
-      {{ $hero := false }}
-      {{ if not $coverHidden }}
-        {{ $hero = .Resources.GetMatch "cover*" }}
-        {{ if not $hero }}
-          {{ with .Resources.ByType "image" }}
-            {{ if gt (len .) 0 }}
-              {{ $hero = index (first 1 .) 0 }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-      {{ with $hero }}
-        <figure class="post-hero">
-          <img src="{{ .RelPermalink }}" alt="{{ $.Params.coverAlt | default (printf "Cover image for %s" $.Title) }}">
-        </figure>
-      {{ end }}
     </header>
     <div class="post-content">
       {{ .Content }}
