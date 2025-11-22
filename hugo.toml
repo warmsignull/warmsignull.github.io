@@ -22,14 +22,6 @@ name = 'Mastodon'
 url = 'https://mastodon.social/@warmsignull'
 
 [[params.social]]
-name = 'YouTube'
-url = 'https://www.youtube.com/@warmsignull'
-
-[[params.social]]
-name = 'Reddit'
-url = 'https://www.reddit.com/u/warmsignull'
-
-[[params.social]]
 name = 'Substack'
 url = 'https://warmsignull.substack.com'
 

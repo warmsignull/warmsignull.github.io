@@ -14,8 +14,6 @@ every message.
 
 - [GitHub](https://github.com/warmsignull)
 - [Mastodon](https://mastodon.social/@warmsignull)
-- [YouTube](https://www.youtube.com/@warmsignull)
-- [Reddit](https://www.reddit.com/u/warmsignull)
 - [Substack](https://warmsignull.substack.com)
 
 Prefer another channel? Mention it in your message and I’ll follow up there. Looking
