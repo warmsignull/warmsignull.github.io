@@ -37,5 +37,13 @@
         </ul>
       </div>
     {{ end }}
+    {{ with site.Home.OutputFormats.Get "RSS" }}
+      <div>
+        <h2>Subscribe</h2>
+        <ul>
+          <li><a href="{{ .RelPermalink }}">RSS Feed</a></li>
+        </ul>
+      </div>
+    {{ end }}
   </div>
 </div>
