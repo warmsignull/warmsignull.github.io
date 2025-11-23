@@ -22,6 +22,10 @@ name = 'Mastodon'
 url = 'https://mastodon.social/@warmsignull'
 
 [[params.social]]
+name = 'Bluesky'
+url = 'https://bsky.app/profile/warmsignull.bsky.social'
+
+[[params.social]]
 name = 'Substack'
 url = 'https://warmsignull.substack.com'
 

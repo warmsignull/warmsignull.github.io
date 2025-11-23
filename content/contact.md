@@ -14,6 +14,7 @@ every message.
 
 - [GitHub](https://github.com/warmsignull)
 - [Mastodon](https://mastodon.social/@warmsignull)
+- [Bluesky](https://bsky.app/profile/warmsignull.bsky.social)
 - [Substack](https://warmsignull.substack.com)
 
 Prefer another channel? Mention it in your message and I’ll follow up there. Looking
