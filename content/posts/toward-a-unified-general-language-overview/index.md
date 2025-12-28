@@ -1,7 +1,7 @@
 +++
 title = "Toward a Unified General Language - Overview"
 date = 2025-12-28
-lastmod = 2025-12-28T14:57:07-07:00
+lastmod = 2025-12-28T15:36:01-07:00
 slug = "toward-a-unified-general-language-overview"
 tags = ["language-design", "introspection", "metaprogramming", "systems", "programming-languages"]
 draft = false
@@ -160,6 +160,11 @@ This allows:
 -   indentation based style for readability focused projects
 
 Multiple syntax skins map to the same internal representation. The compiler sees one uniform structure, which keeps tooling, macros, and compiled artifacts consistent. Developers gain flexibility without fragmenting the language or ecosystem.
+
+Concept exploration:
+
+-   Designing a Low Friction Syntax
+    <https://warmsignull.github.io/posts/designing-a-low-friction-syntax-for-humans-and-machines/>
 
 ---
 

@@ -143,6 +143,10 @@ This allows:
 
 Multiple syntax skins map to the same internal representation. The compiler sees one uniform structure, which keeps tooling, macros, and compiled artifacts consistent. Developers gain flexibility without fragmenting the language or ecosystem.
 
+Concept exploration:
+- Designing a Low Friction Syntax
+  https://warmsignull.github.io/posts/designing-a-low-friction-syntax-for-humans-and-machines/
+
 ---
 
 ** 8. Multi domain by design
