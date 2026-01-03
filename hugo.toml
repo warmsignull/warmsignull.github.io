@@ -11,7 +11,7 @@ enableRobotsTXT = true
     excludeFiles = ['**/*.org']
 
 [params]
-description = 'Tech rants, code experiments, and philosophical side quests. Mostly in dark mode.'
+description = 'Systems-level language design and tooling, documented as a long-term body of work.'
 
 [[params.social]]
 name = 'GitHub'
@@ -64,12 +64,6 @@ identifier = 'topics'
 name = 'Topics'
 url = '/topics/'
 weight = 3
-
-[[menu.main]]
-identifier = 'projects'
-name = 'Projects'
-url = '/projects/'
-weight = 4
 
 [[menu.main]]
 identifier = 'archive'

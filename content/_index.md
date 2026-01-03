@@ -2,24 +2,26 @@
 title = 'Home'
 +++
 
-Welcome. Pull up a chair, preferably one that survived your last rage-quit.
+## Project repos
 
-I’m building a custom programming language, a VM, and the surrounding tooling,
-while documenting the why just as much as the how. That means long-form
-reasoning, design tradeoffs, historical context, failed ideas, and the
-occasional moment where something finally clicks after weeks of staring at it.
+- [Coming soon](#)
 
-## What to expect
+## Publications
 
-- **Language & systems design** – virtual machines, type systems, effects,
-  error handling, memory models, and the sharp edges people usually skip.
+- [Coming soon](#)
 
-- **Design writing** – motivation essays, position-style arguments, and
-  problem-space exploration.
+## Design explorations
 
-- **Computing history** – older systems and ideas that solved problems we keep
-  rediscovering.
+- [Coming soon](#)
 
-New posts land here first. Some are exploratory, some are deep dives.
+## Lessons learned
 
-I use Arch btw.
+- [Coming soon](#)
+
+## Negative results
+
+- [Coming soon](#)
+
+## Chill corner
+
+- [Coming soon](#)

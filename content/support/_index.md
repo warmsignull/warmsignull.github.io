@@ -275,7 +275,7 @@ form?.addEventListener('submit', async (event) => {
     window.location.href = data.url;
   } catch (error) {
     console.error(error);
-    setStatus('Network error. Please try again or email hello@warmsignull.com.', 'error');
+    setStatus('Network error. Please try again or email warmsignull@gmail.com.', 'error');
     button.disabled = false;
   }
 });
