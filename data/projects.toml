@@ -1,11 +1,1 @@
-[[items]]
-title = "Diceware Passphrase Generator"
-summary = "Python CLI for generating secure Diceware passphrases, bundled with scripts to download and verify the official EFF wordlists and support custom lists."
-link = "https://github.com/warmsignull/diceware-gen"
-tags = ["python", "cli", "security"]
-
-[[items]]
-title = "Desktop Launcher"
-summary = "Curses-based desktop session launcher that reads a JSON config, detects installed environments, and lets you launch, install, or manage them from one UI."
-link = "https://github.com/warmsignull/desktop"
-tags = ["python", "linux", "tui"]
+items = []

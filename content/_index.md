@@ -2,21 +2,24 @@
 title = 'Home'
 +++
 
-Welcome, pull up a chair, preferably one that survived your last rage-quit
-session. This corner of the internet is where I overthink technology, write
-code that definitely needed another `git commit --amend`, and poke the big
-philosophical bear just enough to keep things interesting.
+Welcome. Pull up a chair, preferably one that survived your last rage-quit.
 
-## What to expect (and what to blame me for)
+I’m building a custom programming language, a VM, and the surrounding tooling,
+while documenting the why just as much as the how. That means long-form
+reasoning, design tradeoffs, historical context, failed ideas, and the
+occasional moment where something finally clicks after weeks of staring at it.
 
-- **Technology** - hype breakdowns, trend chasing, and the occasional “this is
-  probably Skynet” hot take.
-- **Programming** - tutorials, bug confessions, and snippets that only work on
-  my machine (until you read the post, obviously).
-- **Philosophy** - thought experiments, meaning-of-life detours, and memeing my
-  way through existential dread.
+## What to expect
 
-New posts land here first. Jump into the archive, filter by topic on the
-Topics page, or doom-scroll the social links below for more chaos.
+- **Language & systems design** – virtual machines, type systems, effects,
+  error handling, memory models, and the sharp edges people usually skip.
+
+- **Design writing** – motivation essays, position-style arguments, and
+  problem-space exploration.
+
+- **Computing history** – older systems and ideas that solved problems we keep
+  rediscovering.
+
+New posts land here first. Some are exploratory, some are deep dives.
 
 I use Arch btw.

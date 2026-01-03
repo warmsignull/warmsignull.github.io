@@ -5,6 +5,7 @@
 #+HUGO_BUNDLE: toward-a-unified-general-language-overview
 #+HUGO_TAGS: language-design introspection metaprogramming systems programming-languages
 #+FILETAGS: :language-design:introspection:metaprogramming:systems:programming-languages:
+#+HUGO_SUMMARY: An overview of the motivations and design goals behind a unified general language, covering readable IR, image-capable development, memory control, types, macros, and multi-domain tooling.
 #+HUGO_AUTO_SET_LASTMOD: true
 #+EXPORT_FILE_NAME: index
 #+HUGO_DRAFT: false

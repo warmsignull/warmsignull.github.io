@@ -3,10 +3,13 @@ title = 'Support Me'
 description = 'Fuel future content and projects with a custom donation.'
 +++
 
-Supporting the work on Warm Signull keeps the experiments alive, whether it is
-late-night debugging sessions, deep-dive essays, or the occasional wildly
-over-engineered side project. You can contribute any amount, one-time or as a
-monthly boost, and optionally leave a note that I’ll read personally.
+Warm Signull is a long-term body of work: experimental language design,
+tooling, systems exploration, and careful writing. My goal is to dedicate the
+coming decades of my life fully to this work and the ideas behind it.
+
+Support helps make that focus sustainable. You can contribute one-time or on a
+recurring basis. If you’re interested in funding, collaboration, or long-term
+support, I’d be glad to connect via the contact page.
 
 **Options:**
 

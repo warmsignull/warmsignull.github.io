@@ -4,6 +4,7 @@ date = 2025-12-28
 lastmod = 2025-12-28T15:36:01-07:00
 slug = "toward-a-unified-general-language-overview"
 tags = ["language-design", "introspection", "metaprogramming", "systems", "programming-languages"]
+summary = "An overview of the motivations and design goals behind a unified general language, covering readable IR, image-capable development, memory control, types, macros, and multi-domain tooling."
 draft = false
 +++
 
