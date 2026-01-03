@@ -1,5 +1,5 @@
 +++
-title = 'Support Me'
+title = 'Support'
 description = 'Fuel future content and projects with a custom donation.'
 +++
 
@@ -9,7 +9,7 @@ coming decades of my life fully to this work and the ideas behind it.
 
 Support helps make that focus sustainable. You can contribute one-time or on a
 recurring basis. If you’re interested in funding, collaboration, or long-term
-support, I’d be glad to connect via the contact page.
+support, I’d be glad to connect via the [contact page](/contact/).
 
 **Options:**
 
@@ -54,7 +54,7 @@ support, I’d be glad to connect via the contact page.
   </label>
 </fieldset>
 
-<button type="submit" id="submit-button">Support me</button>
+<button type="submit" id="submit-button">Support</button>
 <p id="form-status" role="status" aria-live="polite"></p>
 <p class="support-help muted">Payments are processed securely by Stripe. Trouble checking out? Email <a href="mailto:warmsignull@gmail.com">warmsignull@gmail.com</a>.</p>
 </form>

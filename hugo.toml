@@ -30,7 +30,7 @@ name = 'Substack'
 url = 'https://warmsignull.substack.com'
 
 [[params.donations]]
-name = 'Support Me'
+name = 'Support'
 url = '/support/'
 
 [[params.donations]]
@@ -73,7 +73,7 @@ weight = 5
 
 [[menu.main]]
 identifier = 'support'
-name = 'Support Me'
+name = 'Support'
 url = '/support/'
 weight = 6
 
