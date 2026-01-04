@@ -19,6 +19,11 @@ Questions that recur throughout the work:
 
 Abstractions that cannot answer these questions cleanly are treated with suspicion, regardless of convenience.
 
+## Previous:
+
+- [Contact With Reality](/contact-with-reality/)  
+  A statement of stance and orientation toward abstraction, constraints, and accountability.
+
 ## Next:
 
 - [Thinking Under Constraint](/thinking-under-constraint/)  
