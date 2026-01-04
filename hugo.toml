@@ -11,7 +11,7 @@ enableRobotsTXT = true
     excludeFiles = ['**/*.org']
 
 [params]
-description = 'Systems-level language design and tooling, documented as a long-term body of work.'
+description = 'Systems-level language design and tooling.'
 
 [[params.social]]
 name = 'GitHub'
