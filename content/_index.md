@@ -20,6 +20,9 @@ This is not a short-term experiment. The work is pursued with a long horizon and
 
 If you want to understand the thinking behind this work before diving into code or design notes, start with these pages:
 
+- [Why Another Language](/why-another-language/)  
+  Coming soon.
+
 - [Contact With Reality](/contact-with-reality/)  
   A statement of stance and orientation toward abstraction, constraints, and accountability.
 
