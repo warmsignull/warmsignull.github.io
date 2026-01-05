@@ -1,7 +1,7 @@
 :root {
   color-scheme: dark;
-  --bg: #0d0b0c;
-  --bg-elevated: #151314;
+  --bg: #0f1115;
+  --bg-elevated: #161921;
   --text: #f1f5f9;
   --muted: #9ca3af;
   --border: #232634;
@@ -15,8 +15,8 @@
 
 html[data-theme='light'] {
   color-scheme: light;
-  --bg: #0d0b0c;
-  --bg-elevated: #151314;
+  --bg: #0f1115;
+  --bg-elevated: #161921;
   --text: #1f2937;
   --muted: #4b5563;
   --border: #d1d5db;
