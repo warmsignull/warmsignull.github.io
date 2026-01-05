@@ -2,8 +2,6 @@
 title = 'Home'
 +++
 
-## Warm Signull
-
 Warm Signull documents the long-term design and implementation of a custom programming language, virtual machine, and supporting tooling, alongside the reasoning, failures, and constraints that shape them.
 
 The work is guided by a preference for **contact with reality**: systems that admit what they depend on, expose their boundaries, and remain legible under pressure. Abstractions are treated as choices with costs, not as neutral conveniences.
