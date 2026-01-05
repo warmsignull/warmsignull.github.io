@@ -10,6 +10,8 @@ The work is guided by a preference for **contact with reality**: systems that ad
 
 This site records decisions, trade-offs, corrections, and failures as the work progresses, with the intent of making the reasoning as durable as the code itself.
 
+The emphasis is on design constraints and failure modes that are usually undocumented or discarded once code ships.
+
 This is not a short-term experiment. The work is pursued with a long horizon and a willingness to move slowly where understanding matters more than speed.
 
 ---
@@ -84,6 +86,18 @@ Personal notes, side thoughts, and non-serious writing.
 
 ## [Support](/support/)
 
-This work is developed publicly and independently.
+All work on Warm Signull is developed and published publicly.  
+There is no gated content and no private access.
 
-If it is useful or aligns with your interests, support helps keep it going.
+Support increases the time and attention available for deep, constraint-driven design, implementation, and documentation.
+
+In practical terms, this tends to mean:
+
+- more time spent on foundational design rather than surface features
+- more thorough documentation of trade-offs and failure modes
+- more Signal-level writing that can be cited, reused, and built upon
+
+Support does not change the direction of the work.  
+It changes how much depth and care can be applied to it.
+
+This is most relevant to people comfortable supporting long-horizon thinking rather than constant output.
