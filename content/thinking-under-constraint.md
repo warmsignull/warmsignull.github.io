@@ -19,11 +19,6 @@ In real systems, failures surface immediately, trade-offs cannot be postponed, a
 
 Much of the work documented here is an attempt to preserve this relationship to constraint inside modern software systems, where abstraction often hides cost, responsibility, and failure until it is too late.
 
-## Previous:
-
-- [Abstraction, Indirection, and Accountability](/abstraction-indirection-accountability/)  
-  On when abstraction earns its place and when it becomes insulation.
-
 ## Next:
 
 - [Fieldcraft vs Factory Thinking](/fieldcraft-vs-factory-thinking/)  
@@ -31,3 +26,8 @@ Much of the work documented here is an attempt to preserve this relationship to 
 
 - [Back To Home](/)  
   Return to the main page.
+
+## Previous:
+
+- [Abstraction, Indirection, and Accountability](/abstraction-indirection-accountability/)  
+  On when abstraction earns its place and when it becomes insulation.

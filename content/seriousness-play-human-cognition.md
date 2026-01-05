@@ -49,11 +49,6 @@ A mind that never relaxes eventually mistakes rigidity for clarity.
 **Humor does not weaken serious work.**  
 It keeps it alive.
 
-## Previous:
-
-- [Fieldcraft vs Factory Thinking](/fieldcraft-vs-factory-thinking/)  
-  Why many technical problems are treated as factory work despite being field problems.
-
 ## Next:
 
 - [Divergent Work Is Legitimate](/divergent-work-is-legitimate/)  
@@ -61,3 +56,8 @@ It keeps it alive.
 
 - [Back To Home](/)  
   Return to the main page.
+
+## Previous:
+
+- [Fieldcraft vs Factory Thinking](/fieldcraft-vs-factory-thinking/)  
+  Why many technical problems are treated as factory work despite being field problems.

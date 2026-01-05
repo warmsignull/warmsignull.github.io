@@ -98,6 +98,7 @@ a:focus {
   padding-bottom: 3rem;
 }
 
+
 .footer-inner {
   display: flex;
   flex-direction: column;
@@ -653,4 +654,15 @@ a:focus {
   .post {
     padding: 1.5rem;
   }
+}
+.home-note {
+  margin: 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-note p {
+  margin: 0;
+  color: var(--secondary-text);
+  font-size: 0.95rem;
 }

@@ -16,11 +16,6 @@ Fieldcraft does not reject structure. It relies on **different structure**:
 
 This distinction explains much of the project’s workflow, cadence, and separation between **exploration and commitment**. It also explains why progress may appear uneven while understanding accumulates underneath.
 
-## Previous:
-
-- [Thinking Under Constraint](/thinking-under-constraint/)  
-  On dependency, failure, responsibility, and legibility under pressure.
-
 ## Next:
 
 - [Seriousness, Play, and Human Cognition](/seriousness-play-human-cognition/)  
@@ -28,3 +23,8 @@ This distinction explains much of the project’s workflow, cadence, and separat
 
 - [Back To Home](/)  
   Return to the main page.
+
+## Previous:
+
+- [Thinking Under Constraint](/thinking-under-constraint/)  
+  On dependency, failure, responsibility, and legibility under pressure.

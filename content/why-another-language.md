@@ -23,7 +23,7 @@ Instead of baking assumptions into the language, differences are expressed throu
 - what memory management strategies are permitted  
 - what execution models are supported  
 
-A microcontroller, an operating system kernel, a desktop application, and a game engine are not treated as variants of the same environment. They are treated as environments with different capabilities, surfaced directly in the language rather than hidden behind conventions or build systems.
+A microcontroller, a web application, an operating system kernel, a desktop application, and a game engine are not treated as variants of the same environment. They are treated as environments with different capabilities, surfaced directly in the language rather than hidden behind conventions or build systems.
 
 ---
 

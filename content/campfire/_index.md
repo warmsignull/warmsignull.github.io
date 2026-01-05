@@ -11,7 +11,7 @@ If you are looking for decisions, constraints, or claims the project is willing 
 
 ---
 
-Does anyone else feel a little personally attacked by this?
+Does anyone else feel slightly personally attacked by this?
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;">
   <iframe

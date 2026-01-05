@@ -2,18 +2,6 @@
   {{ with .Content }}
     <div class="content">{{ . }}</div>
   {{ end }}
-  {{ with site.Params.social }}
-    <div class="social-links">
-      <h2>Connect</h2>
-      <ul>
-        {{ range . }}
-          <li>
-            <a href="{{ .url }}" target="_blank" rel="me noopener noreferrer">{{ .name }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    </div>
-  {{ end }}
   {{ $posts := where site.RegularPages "Section" "posts" }}
   {{ $recent := first 3 $posts.ByDate.Reverse }}
   {{ if gt (len $recent) 0 }}

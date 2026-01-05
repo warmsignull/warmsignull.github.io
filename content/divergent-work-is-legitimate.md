@@ -19,12 +19,12 @@ These are precisely the conditions under which new models, architectures, and co
 
 This project treats **divergent work** as a legitimate and serious way of thinking, not as a deviation that must justify itself against factory expectations. Rigor is preserved through constraints, explicit reasoning, and eventual commitment, not through constant visible motion.
 
-## Previous:
-
-- [Seriousness, Play, and Human Cognition](/seriousness-play-human-cognition/)  
-  Why excessive dryness becomes self sabotage, and why humor and warmth are functional.
-
 ## Next:
 
 - [Back To Home](/)  
   Return to the main page.
+
+## Previous:
+
+- [Seriousness, Play, and Human Cognition](/seriousness-play-human-cognition/)  
+  Why excessive dryness becomes self sabotage, and why humor and warmth are functional.

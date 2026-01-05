@@ -74,7 +74,7 @@ Coming soon.
 
 Chronological posts as the work unfolds.
 
-[Visit](/posts/)
+[Explore](/posts/)
 
 ---
 
@@ -90,7 +90,7 @@ Coming soon.
 
 Current working conditions and cadence.
 
-[Visit](/weather/)
+[Check](/weather/)
 
 ---
 
@@ -107,3 +107,7 @@ Personal notes, side thoughts, and non-serious writing.
 All work on Warm Signull is developed and published publicly.
 
 Support increases the capacity available for sustained development, research, and documentation.
+
+[Consider](/support/)
+
+---
