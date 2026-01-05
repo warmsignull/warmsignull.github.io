@@ -39,6 +39,16 @@ body.site {
   transition: background 200ms ease, color 200ms ease;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 *,
 *::before,
 *::after {
