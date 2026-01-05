@@ -3,19 +3,34 @@ title = 'Support'
 description = 'Fuel future content and projects with a custom donation.'
 +++
 
-Warm Signull is a long-term body of work: experimental language design,
-tooling, systems exploration, and careful writing. My goal is to dedicate the
-coming decades of my life fully to this work and the ideas behind it.
+All work on Warm Signull is developed and published publicly.  
+There is no gated content, no private access, and no supporter-only material.
 
-Support helps make that focus sustainable. You can contribute one-time or on a
-recurring basis. If you’re interested in funding, collaboration, or long-term
-support, I’d be glad to connect via the [contact page](/contact/).
+Support increases the capacity available for sustained development, research, and documentation. It allows more time and attention to be spent on foundational design work rather than only incremental progress constrained by spare-time availability.
 
-**Options:**
+In practical terms, support enables:
 
-- **Ko-fi:** <https://ko-fi.com/warmsignull>
-- **Patreon:** <https://www.patreon.com/warmsignull>
-- **Stripe:** Use the form below to launch a secure Stripe Checkout session.
+- deeper investigation of language and VM design trade-offs  
+- more careful implementation and validation of core mechanisms  
+- clearer documentation of constraints, failure modes, and rejected alternatives  
+- more frequent Signal-level writing that can be referenced, cited, and built upon  
+
+Support does not grant control over the project’s direction or design decisions. The work remains guided by explicit constraints and publicly stated principles.
+
+Over time, sufficient support may enable collaboration or hiring to accelerate research and development.
+
+This work is best supported by people comfortable with long-horizon thinking and public artifacts, rather than frequent deliverables or private access.
+
+---
+
+## Ways to support
+
+Support can be one-time or recurring, depending on preference.
+
+- Ko-fi: <https://ko-fi.com/warmsignull>  
+- Stripe: Use the form below to launch a secure Stripe Checkout session.
+
+For inquiries about funding, collaboration, or longer-term support, use the [contact page](/contact/).
 
 <div class="support-wrapper">
 <form id="donation-form" class="support-form">

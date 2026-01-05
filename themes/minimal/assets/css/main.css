@@ -122,8 +122,8 @@ a:focus {
 
 .footer-links {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 }
 
 .footer-links h2 {

@@ -4,13 +4,17 @@ title = 'Home'
 
 Warm Signull documents the long-term design and implementation of a custom programming language, virtual machine, and supporting tooling, alongside the reasoning, failures, and constraints that shape them.
 
-The work is guided by a preference for **contact with reality**: systems that admit what they depend on, expose their boundaries, and remain legible under pressure. Abstractions are treated as choices with costs, not as neutral conveniences.
+The work is guided by a preference for **contact with reality**: systems that admit what they depend on, expose their boundaries, and remain legible under pressure. Abstractions are treated as deliberate choices with explicit costs, rather than neutral conveniences.
 
-This site records decisions, trade-offs, corrections, and failures as the work progresses, with the intent of making the reasoning as durable as the code itself.
+The design goal is a **single language and core representation** capable of spanning microcontrollers, systems programming, desktop applications, games, and higher-level software, without requiring different languages for different domains. Platform differences are handled through **explicit capabilities and opt-in features**, rather than implicit assumptions.
 
-The emphasis is on design constraints and failure modes that are usually undocumented or discarded once code ships.
+The language is designed for **both humans and machines**. A minimal internal representation serves as the canonical form for tooling, analysis, and code generation, while users interact through one or more surface syntaxes chosen at the editor level. Syntactic sugar is permitted, but always reduces to a small, inspectable core.
 
-This is not a short-term experiment. The work is pursued with a long horizon and a willingness to move slowly where understanding matters more than speed.
+This site records decisions, trade-offs, corrections, and failures as the work progresses, with the intent of making the reasoning as durable as the code itself. The emphasis is on design constraints and failure modes that are usually undocumented or discarded once implementations ship.
+
+The design deliberately separates **reasoning, development, and deployment** concerns, allowing experimentation, persistent state, and tooling-heavy workflows without assuming that all components must ship or that a single execution model fits every stage.
+
+This is not a short-term experiment. The work is pursued with a long horizon and a willingness to move slowly where understanding, correctness, and coherence matter more than speed.
 
 ---
 
@@ -19,7 +23,7 @@ This is not a short-term experiment. The work is pursued with a long horizon and
 If you want to understand the thinking behind this work before diving into code or design notes, start with these pages:
 
 - [Why Another Language](/why-another-language/)  
-  Coming soon.
+  A discussion of the design space this project explores, and why existing languages do not address it as a whole.
 
 - [Contact With Reality](/contact-with-reality/)  
   A statement of stance and orientation toward abstraction, constraints, and accountability.
@@ -45,9 +49,12 @@ These pages explain why the project looks the way it does.
 
 ## Current focus
 
-- Language design constraints and trade-offs
-- Tooling required for a minimal but complete system
-- Writing and publishing design rationale alongside code
+- **Defining** a minimal internal representation that serves as the canonical form for analysis, tooling, and compilation
+- **Designing** surface syntaxes that down-compile to the same core representation without semantic loss
+- **Establishing** explicit effect, error, and capability boundaries that scale from constrained platforms to full systems
+- **Exploring** opt-in runtime features, including different memory management and execution models, based on platform support
+- **Building** VM and tooling infrastructure that keeps constraints and failure modes visible
+- **Writing** and publishing design rationale alongside implementation, including rejected alternatives and trade-offs
 
 ---
 
@@ -55,50 +62,48 @@ These pages explain why the project looks the way it does.
 
 The site is structured around different **states of work**, rather than treating everything as equally finished.
 
-### [Camp](/camp/)
+### Camp
 
 Foundations, constraints, and load-bearing decisions.
 
+Coming soon.
+
 ---
 
-### [Trail](/posts/)
+### Trail
 
 Chronological posts as the work unfolds.
 
+[Visit](/posts/)
+
 ---
 
-### [Signal](/signal/)
+### Signal
 
 Work I am prepared to stand behind publicly.
 
+Coming soon.
+
 ---
 
-### [Weather](/weather/)
+### Weather
 
 Current working conditions and cadence.
 
+[Visit](/weather/)
+
 ---
 
-### [Campfire](/campfire/)
+### Campfire
 
 Personal notes, side thoughts, and non-serious writing.
 
+[Visit](/campfire/)
+
 ---
 
-## [Support](/support/)
+## Support
 
-All work on Warm Signull is developed and published publicly.  
-There is no gated content and no private access.
+All work on Warm Signull is developed and published publicly.
 
-Support increases the time and attention available for deep, constraint-driven design, implementation, and documentation.
-
-In practical terms, this tends to mean:
-
-- more time spent on foundational design rather than surface features
-- more thorough documentation of trade-offs and failure modes
-- more Signal-level writing that can be cited, reused, and built upon
-
-Support does not change the direction of the work.  
-It changes how much depth and care can be applied to it.
-
-This is most relevant to people comfortable supporting long-horizon thinking rather than constant output.
+Support increases the capacity available for sustained development, research, and documentation.

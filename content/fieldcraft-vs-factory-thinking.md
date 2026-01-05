@@ -2,19 +2,19 @@
 title = 'Fieldcraft vs Factory Thinking'
 +++
 
-Factory thinking assumes stable inputs, predictable outputs, and constant cadence.
+Factory thinking assumes stable inputs, predictable outputs, and constant cadence. It optimizes for repeatability, throughput, and schedule adherence.
 
-Fieldcraft assumes variable terrain, incomplete information, and judgment under uncertainty.
+**Fieldcraft** assumes variable terrain, incomplete information, and judgment under uncertainty. It optimizes for orientation, adaptation, and survival under changing conditions.
 
-Many modern technical problems are field problems treated as factory work. The result is brittle systems, premature certainty, and progress that looks smooth until it collapses.
+Many modern technical problems are **field problems treated as factory work**. The result is brittle systems, premature certainty, and progress that looks smooth until it collapses.
 
-Fieldcraft does not reject structure. It uses different structure:
+Fieldcraft does not reject structure. It relies on **different structure**:
 
-- Orientation over schedules
-- Boundaries over checklists
-- Adaptation over compliance
+- orientation over schedules
+- boundaries over checklists
+- adaptation over compliance
 
-This distinction explains much of the project’s workflow, cadence, and separation between exploration and commitment.
+This distinction explains much of the project’s workflow, cadence, and separation between **exploration and commitment**. It also explains why progress may appear uneven while understanding accumulates underneath.
 
 ## Previous:
 
