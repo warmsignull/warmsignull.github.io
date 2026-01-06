@@ -21,7 +21,7 @@ This distinction explains much of the project’s workflow, cadence, and separat
 - [Seriousness, Play, and Human Cognition](/seriousness-play-human-cognition/)  
   Why excessive dryness becomes self sabotage, and why humor and warmth are functional.
 
-- [Back To Home](/)  
+- [Back To Home](/#orientation)  
   Return to the main page.
 
 ## Previous:

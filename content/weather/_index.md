@@ -7,7 +7,7 @@ title = 'Weather'
 Weather describes **conditions of visibility**, not effort or productivity.  
 It exists to explain how the work should be interpreted from the outside.
 
-The states below are intentionally coarse. They change only when the *mode of work* changes.
+The states below are intentionally coarse. They change only when the **mode of work** changes.
 
 ---
 

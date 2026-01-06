@@ -54,7 +54,7 @@ It keeps it alive.
 - [Divergent Work Is Legitimate](/divergent-work-is-legitimate/)  
   On non-linear work as a serious and equal way of thinking.
 
-- [Back To Home](/)  
+- [Back To Home](/#orientation)  
   Return to the main page.
 
 ## Previous:

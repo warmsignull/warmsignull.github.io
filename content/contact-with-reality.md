@@ -27,7 +27,7 @@ This page exists to make that orientation explicit, so the rest of the work can 
 - [Abstraction, Indirection, and Accountability](/abstraction-indirection-accountability/)  
   On when abstraction earns its place and when it becomes insulation.
 
-- [Back To Home](/)  
+- [Back To Home](/#orientation)  
   Return to the main page.
 
 ## Previous:

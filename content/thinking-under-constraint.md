@@ -24,7 +24,7 @@ Much of the work documented here is an attempt to preserve this relationship to 
 - [Fieldcraft vs Factory Thinking](/fieldcraft-vs-factory-thinking/)  
   Why many technical problems are treated as factory work despite being field problems.
 
-- [Back To Home](/)  
+- [Back To Home](/#orientation)  
   Return to the main page.
 
 ## Previous:

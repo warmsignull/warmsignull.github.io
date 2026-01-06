@@ -1,7 +1,12 @@
 +++
 title = "Contact"
 description = "Ways to reach Warm Signull via email or social channels."
+show_title = false
 +++
+
+{{< figure src="/images/contact.jpg" alt="Contact" >}}
+
+... is a great movie, but also:
 
 Need to get in touch about the work, a post, collaboration, or support? I read
 every message.

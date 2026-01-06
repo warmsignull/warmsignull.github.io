@@ -33,7 +33,7 @@ Most languages entangle their surface syntax with their internal representation.
 
 This project separates those concerns.
 
-A **minimal internal representation** serves as the canonical form for analysis, compilation, and tooling. It is designed to be explicit, inspectable, and mechanically transformable. Human-facing syntax is treated as a *view* over this core rather than as the source of truth.
+A **minimal internal representation** serves as the canonical form for analysis, compilation, and tooling. It is designed to be explicit, inspectable, and mechanically transformable. Human-facing syntax is treated as a **view** over this core rather than as the source of truth.
 
 This allows:
 
@@ -109,5 +109,5 @@ That is the gap this project is intended to explore.
 - [Contact With Reality](/contact-with-reality/)  
   A statement of stance and orientation toward abstraction, constraints, and accountability.
 
-- [Back To Home](/)  
+- [Back To Home](/#orientation)  
   Return to the main page.

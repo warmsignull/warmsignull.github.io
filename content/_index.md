@@ -2,11 +2,11 @@
 title = 'Home'
 +++
 
-Warm Signull documents the long-term design and implementation of a custom programming language, virtual machine, and supporting tooling, alongside the reasoning, failures, and constraints that shape them.
+**Warm Signull** documents the long-term design and implementation of a custom programming language, virtual machine, and supporting tooling, alongside the reasoning, failures, and constraints that shape them.
 
 The work is guided by a preference for **contact with reality**: systems that admit what they depend on, expose their boundaries, and remain legible under pressure. Abstractions are treated as deliberate choices with explicit costs, rather than neutral conveniences.
 
-The design goal is a **single language and core representation** capable of spanning microcontrollers, systems programming, desktop applications, games, and higher-level software, without requiring different languages for different domains. Platform differences are handled through **explicit capabilities and opt-in features**, rather than implicit assumptions.
+The design goal is a **single language and core representation** capable of spanning microcontrollers, systems programming, desktop applications, games, web, and higher-level software, without requiring different languages for different domains. Platform differences are handled through **explicit capabilities and opt-in features**, rather than implicit assumptions.
 
 The language is designed for **both humans and machines**. A minimal internal representation serves as the canonical form for tooling, analysis, and code generation, while users interact through one or more surface syntaxes chosen at the editor level. Syntactic sugar is permitted, but always reduces to a small, inspectable core.
 
@@ -18,7 +18,7 @@ This is not a short-term experiment. The work is pursued with a long horizon and
 
 ---
 
-## Orientation
+## Orientation {#orientation}
 
 If you want to understand the thinking behind this work before diving into code or design notes, start with these pages:
 

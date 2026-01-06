@@ -21,7 +21,7 @@ This project treats **divergent work** as a legitimate and serious way of thinki
 
 ## Next:
 
-- [Back To Home](/)  
+- [Back To Home](/#orientation)  
   Return to the main page.
 
 ## Previous:

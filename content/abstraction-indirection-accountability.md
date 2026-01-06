@@ -25,7 +25,7 @@ Abstractions that cannot answer these questions cleanly are treated with suspici
 - [Thinking Under Constraint](/thinking-under-constraint/)  
   On dependency, failure, responsibility, and legibility under pressure.
 
-- [Back To Home](/)  
+- [Back To Home](/#orientation)  
   Return to the main page.
 
 ## Previous:

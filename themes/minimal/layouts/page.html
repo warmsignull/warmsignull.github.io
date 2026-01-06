@@ -1,21 +1,26 @@
 {{ define "main" }}
   <article class="post">
-    <header class="post-header">
-      <h1>{{ .Title }}</h1>
-      <div class="post-meta">
-        {{ with .Date }}
-          {{ $machine := . | time.Format "2006-01-02" }}
-          <time datetime="{{ $machine }}">{{ . | time.Format ":date_full" }}</time>
+    {{ $showTitle := ne .Params.show_title false }}
+    {{ if or $showTitle .Date .Params.tags }}
+      <header class="post-header">
+        {{ if $showTitle }}
+          <h1>{{ .Title }}</h1>
         {{ end }}
-        {{ with .Params.tags }}
-          <ul class="tag-list">
-            {{ range . }}
-              <li><a href="{{ (print "/tags/" (urlize .) "/") | relLangURL }}">{{ . }}</a></li>
-            {{ end }}
-          </ul>
-        {{ end }}
-      </div>
-    </header>
+        <div class="post-meta">
+          {{ with .Date }}
+            {{ $machine := . | time.Format "2006-01-02" }}
+            <time datetime="{{ $machine }}">{{ . | time.Format ":date_full" }}</time>
+          {{ end }}
+          {{ with .Params.tags }}
+            <ul class="tag-list">
+              {{ range . }}
+                <li><a href="{{ (print "/tags/" (urlize .) "/") | relLangURL }}">{{ . }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </header>
+    {{ end }}
     <div class="post-content">
       {{ .Content }}
     </div>
