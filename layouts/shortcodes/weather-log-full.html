@@ -1,0 +1,9 @@
+{{- $entries := where site.RegularPages "Params.weather_entry" true -}}
+{{- $entries = $entries.ByDate.Reverse -}}
+{{- if gt (len $entries) 0 -}}
+  {{- range $entries }}
+    <p>{{ .Date | time.Format "2006-01-02" }}: {{ .Title }}{{ with .Params.note }}, {{ . }}{{ end }}</p>
+  {{- end }}
+{{- else -}}
+  <p>No weather updates yet.</p>
+{{- end -}}

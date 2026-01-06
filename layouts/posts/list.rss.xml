@@ -1,0 +1,31 @@
+{{- $pages := .Pages.ByDate.Reverse -}}
+{{- $title := printf "Posts on %s" site.Title -}}
+{{- $description := .Params.description | default site.Params.description -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" | safeHTML -}}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ $title }}</title>
+    <link>{{ "/posts/" | absURL }}</link>
+    <description>{{ $description }}</description>
+    <language>{{ site.LanguageCode | default "en-us" }}</language>
+    <generator>Hugo</generator>
+    <atom:link href="{{ "/posts/index.xml" | absURL }}" rel="self" type="application/rss+xml" />
+    {{- range $pages }}
+      {{- $summary := "" -}}
+      {{- with .Summary }}{{ $summary = . }}{{ end -}}
+      {{- if not $summary }}
+        {{- $summary = .Plain | plainify -}}
+      {{- end -}}
+      <item>
+        <title>{{ .Title }}</title>
+        <link>{{ .Permalink }}</link>
+        <guid>{{ .Permalink }}</guid>
+        {{- with .Date }}
+          <pubDate>{{ .Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+        {{- end }}
+        <description><![CDATA[{{ $summary }}]]></description>
+        <content:encoded><![CDATA[{{ .Content }}]]></content:encoded>
+      </item>
+    {{- end }}
+  </channel>
+</rss>

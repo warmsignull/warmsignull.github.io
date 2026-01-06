@@ -1,5 +1,6 @@
 {{- $entries := where site.RegularPages "Params.weather_entry" true -}}
 {{- $entries = $entries.ByDate.Reverse -}}
+<hr>
 <h2>Current Weather</h2>
 {{- if gt (len $entries) 0 -}}
   {{- $current := index $entries 0 -}}
@@ -13,3 +14,4 @@
   <p>No weather updates yet.</p>
   <p>Also available as: <a href="{{ "/weather/index.xml" | relLangURL }}">RSS</a>, <a href="{{ "/weather/index.json" | relLangURL }}">JSON</a></p>
 {{- end -}}
+<hr>

@@ -3,8 +3,10 @@
 {{- range $pages }}
   {{- $item := dict "id" .Permalink "url" .Permalink "title" .Title "date_published" (.Date.Format "2006-01-02T15:04:05-07:00") -}}
   {{- with .Summary }}
-    {{- $item = merge $item (dict "content_text" (. | plainify)) -}}
+    {{- $summaryText := . | plainify -}}
+    {{- $item = merge $item (dict "summary" $summaryText "content_text" $summaryText) -}}
   {{- end -}}
+  {{- $item = merge $item (dict "content_html" .Content) -}}
   {{- with .Params.tags }}
     {{- $item = merge $item (dict "tags" .) -}}
   {{- end -}}

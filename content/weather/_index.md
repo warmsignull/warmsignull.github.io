@@ -89,3 +89,5 @@ Assumptions are shifting, boundaries are being reevaluated, or the mode of work 
 ---
 
 {{< weather-log >}}
+
+[Full weather log](/weather/updates/)
