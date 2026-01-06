@@ -1,0 +1,25 @@
+{{- $entries := where site.RegularPages "Params.weather_entry" true -}}
+{{- $entries = $entries.ByDate.Reverse -}}
+{{- $title := printf "%s Weather" site.Title -}}
+{{- $description := printf "Current weather state for %s." site.Title -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" | safeHTML -}}
+<rss version="2.0">
+  <channel>
+    <title>{{ $title }}</title>
+    <link>{{ "/weather/" | absURL }}</link>
+    <description>{{ $description }}</description>
+    <language>{{ site.LanguageCode | default "en-us" }}</language>
+    {{- if gt (len $entries) 0 -}}
+      {{- $current := index $entries 0 -}}
+      {{- $desc := default (printf "Current weather: %s." $current.Title) $current.Params.note -}}
+      {{- $pubDate := $current.Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" -}}
+      <item>
+        <title>{{ $current.Title }}</title>
+        <link>{{ "/weather/" | absURL }}</link>
+        <guid isPermaLink="false">{{ printf "%s-%s" ($current.Date.Format "2006-01-02") (urlize $current.Title) }}</guid>
+        <pubDate>{{ $pubDate }}</pubDate>
+        <description>{{ $desc | htmlEscape }}</description>
+      </item>
+    {{- end -}}
+  </channel>
+</rss>

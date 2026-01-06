@@ -1,0 +1,16 @@
+{{- $entries := where site.RegularPages "Params.weather_entry" true -}}
+{{- $entries = $entries.ByDate.Reverse -}}
+{{- $title := printf "%s Weather" site.Title -}}
+{{- $feedURL := "/weather/index.json" | absURL -}}
+{{- $homeURL := "/weather/" | absURL -}}
+{{- $items := slice -}}
+{{- if gt (len $entries) 0 -}}
+  {{- $current := index $entries 0 -}}
+  {{- $content := default (printf "Current weather: %s." $current.Title) $current.Params.note -}}
+  {{- $id := printf "%s-%s" ($current.Date.Format "2006-01-02") (urlize $current.Title) -}}
+  {{- $published := $current.Date.Format "2006-01-02T15:04:05-07:00" -}}
+  {{- $item := dict "id" $id "url" $homeURL "title" $current.Title "content_text" $content "date_published" $published -}}
+  {{- $items = slice $item -}}
+{{- end -}}
+{{- $feed := dict "version" "https://jsonfeed.org/version/1.1" "title" $title "home_page_url" $homeURL "feed_url" $feedURL "items" $items -}}
+{{- $feed | jsonify -}}

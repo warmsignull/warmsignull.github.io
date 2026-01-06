@@ -1,0 +1,16 @@
+{{- $entries := where site.RegularPages "Params.weather_entry" true -}}
+{{- $entries = $entries.ByDate.Reverse -}}
+{{- if gt (len $entries) 0 -}}
+  {{- $display := first 7 $entries -}}
+  <h2>Weather Log</h2>
+  <ul>
+    {{- range $display }}
+      <li>{{ .Date | time.Format "2006-01-02" }}: {{ .Title }}{{ with .Params.note }}, {{ . }}{{ end }}</li>
+    {{- end }}
+  </ul>
+  {{- $oldest := index (last 1 $entries) 0 -}}
+  <p>Log started: {{ $oldest.Date | time.Format "2006-01-02" }}</p>
+{{- else -}}
+  <h2>Weather Log</h2>
+  <p>No weather updates yet.</p>
+{{- end -}}

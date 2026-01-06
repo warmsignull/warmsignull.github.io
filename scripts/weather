@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+import argparse
+import pathlib
+import re
+from datetime import date, datetime
+
+
+def slugify(value):
+    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return slug or "update"
+
+
+def normalize_date(value):
+    if value:
+        if "T" in value:
+            return value
+        return f"{value}T00:00:00"
+    return datetime.now().astimezone().isoformat(timespec="seconds")
+
+
+def escape_toml(value):
+    return value.replace("\\", "\\\\").replace('"', '\\"')
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Add a weather update.")
+    parser.add_argument("state", help="Weather state label.")
+    parser.add_argument("note", nargs="?", default="", help="Optional note.")
+    parser.add_argument("--date", default=date.today().isoformat(), help="YYYY-MM-DD or ISO-8601.")
+    args = parser.parse_args()
+
+    repo_root = pathlib.Path(__file__).resolve().parents[1]
+    updates_dir = repo_root / "content" / "weather" / "updates"
+    updates_dir.mkdir(parents=True, exist_ok=True)
+
+    entry_date = normalize_date(args.date)
+    timestamp = datetime.now().strftime("%Y-%m-%d-%H%M%S")
+    slug = slugify(args.state)
+    filename = f"{timestamp}-{slug}.md"
+    entry_path = updates_dir / filename
+
+    lines = [
+        "+++",
+        f'title = "{escape_toml(args.state)}"',
+        f'date = "{escape_toml(entry_date)}"',
+        "weather_entry = true",
+        "_build = { render = false }",
+    ]
+    if args.note:
+        lines.append(f'note = "{escape_toml(args.note)}"')
+    lines.append("+++")
+    lines.append("")
+
+    entry_path.write_text("\n".join(lines), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

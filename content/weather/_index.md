@@ -1,11 +1,14 @@
 +++
 title = 'Weather'
+outputs = ["HTML", "RSS", "JSON"]
 +++
-
-## Weather States
 
 Weather describes **conditions of visibility**, not effort or productivity.  
 It exists to explain how the work should be interpreted from the outside.
+
+{{< weather-current >}}
+
+## Weather States
 
 The states below are intentionally coarse. They change only when the **mode of work** changes.
 
@@ -85,8 +88,4 @@ Assumptions are shifting, boundaries are being reevaluated, or the mode of work 
 
 ---
 
-## Current Weather: **High Pressure**
-
-2026-01-05
-
-Log started: 2026-01-05
+{{< weather-log >}}
