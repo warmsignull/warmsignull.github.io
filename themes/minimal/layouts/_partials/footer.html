@@ -37,13 +37,39 @@
         </ul>
       </div>
     {{ end }}
-    {{ with site.Home.OutputFormats.Get "RSS" }}
+    {{- $posts := site.GetPage "section" "posts" -}}
+    {{- $weather := site.GetPage "section" "weather" -}}
+    {{- $scratch := newScratch -}}
+    {{- if $posts -}}
+      {{- with $posts.OutputFormats.Get "RSS" }}{{ $scratch.Set "hasFeeds" true }}{{- end -}}
+      {{- with $posts.OutputFormats.Get "JSON" }}{{ $scratch.Set "hasFeeds" true }}{{- end -}}
+    {{- end -}}
+    {{- if $weather -}}
+      {{- with $weather.OutputFormats.Get "RSS" }}{{ $scratch.Set "hasFeeds" true }}{{- end -}}
+      {{- with $weather.OutputFormats.Get "JSON" }}{{ $scratch.Set "hasFeeds" true }}{{- end -}}
+    {{- end -}}
+    {{- if $scratch.Get "hasFeeds" }}
       <div>
         <h2>Subscribe</h2>
         <ul>
-          <li><a href="{{ .RelPermalink }}">RSS Feed</a></li>
+          {{- if $posts -}}
+            {{- with $posts.OutputFormats.Get "RSS" }}
+              <li><a href="{{ .RelPermalink }}">Posts RSS</a></li>
+            {{- end -}}
+            {{- with $posts.OutputFormats.Get "JSON" }}
+              <li><a href="{{ .RelPermalink }}">Posts JSON</a></li>
+            {{- end -}}
+          {{- end -}}
+          {{- if $weather -}}
+            {{- with $weather.OutputFormats.Get "RSS" }}
+              <li><a href="{{ .RelPermalink }}">Weather RSS</a></li>
+            {{- end -}}
+            {{- with $weather.OutputFormats.Get "JSON" }}
+              <li><a href="{{ .RelPermalink }}">Weather JSON</a></li>
+            {{- end -}}
+          {{- end -}}
         </ul>
       </div>
-    {{ end }}
+    {{- end }}
   </div>
 </div>
