@@ -160,6 +160,19 @@ a:focus {
   gap: 1rem;
 }
 
+.brand-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.header-weather {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;

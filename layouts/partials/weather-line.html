@@ -1,0 +1,6 @@
+{{- $entries := where site.RegularPages "Params.weather_entry" true -}}
+{{- $entries = $entries.ByDate.Reverse -}}
+{{- if gt (len $entries) 0 -}}
+  {{- $current := index $entries 0 -}}
+  <p class="header-weather">Current Weather: {{ $current.Title }}{{ with $current.Params.note }} {{ . }}{{ end }} {{ $current.Date | time.Format "2006-01-02" }}</p>
+{{- end -}}
