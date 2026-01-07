@@ -9,7 +9,7 @@ summary = "Why pointer semantics cannot be avoided, how platform constraints sha
 
 ---
 
-{{< figure src="/index.png" >}}
+{{< figure src="/index.jpg" >}}
 
 ---
 
