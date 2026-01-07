@@ -32,7 +32,7 @@ name = 'Substack'
 url = 'https://warmsignull.substack.com'
 
 [[params.donations]]
-name = 'Support'
+name = 'Consider'
 url = '/support/'
 
 [[params.donations]]

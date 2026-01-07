@@ -39,4 +39,4 @@ hugo new content posts/my-new-post/index.md
 
 ** Deployment
 The repository ships with a GitHub Actions workflow that builds with Hugo and
-deploys to GitHub Pages on every push to =master=. No manual build step required.
+deploys to GitHub Pages on every push to =main=. No manual build step required.
