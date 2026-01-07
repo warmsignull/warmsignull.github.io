@@ -44,7 +44,7 @@ def main():
         f'title = "{escape_toml(args.state)}"',
         f'date = "{escape_toml(entry_date)}"',
         "weather_entry = true",
-        "_build = { render = false }",
+        "build = { render = false }",
     ]
     if args.note:
         lines.append(f'note = "{escape_toml(args.note)}"')

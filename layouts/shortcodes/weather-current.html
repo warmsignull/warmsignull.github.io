@@ -9,9 +9,9 @@
   {{- with $current.Params.note }}
     <p>{{ . }}</p>
   {{- end }}
-  <p>Also available as: <a href="{{ "/weather/index.xml" | relLangURL }}">RSS</a>, <a href="{{ "/weather/index.json" | relLangURL }}">JSON</a></p>
+  <p>Also available as: <a href="{{ "/weather/index.xml" | relLangURL }}">RSS</a></p>
 {{- else -}}
   <p>No weather updates yet.</p>
-  <p>Also available as: <a href="{{ "/weather/index.xml" | relLangURL }}">RSS</a>, <a href="{{ "/weather/index.json" | relLangURL }}">JSON</a></p>
+  <p>Also available as: <a href="{{ "/weather/index.xml" | relLangURL }}">RSS</a></p>
 {{- end -}}
 <hr>

@@ -4,6 +4,8 @@ title = 'Warm Signull'
 theme = 'minimal'
 summaryLength = 30
 enableRobotsTXT = true
+[outputs]
+home = ['HTML']
 [module]
   [[module.mounts]]
     source = 'content'

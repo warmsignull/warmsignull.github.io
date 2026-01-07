@@ -1,6 +1,6 @@
 +++
 title = 'Weather'
-outputs = ["HTML", "RSS", "JSON"]
+outputs = ["HTML", "RSS"]
 +++
 
 Weather describes **conditions of visibility**, not effort or productivity.  
