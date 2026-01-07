@@ -30,7 +30,7 @@ Support can be one-time or recurring, depending on preference.
 - Ko-fi: <https://ko-fi.com/warmsignull>  
 - Stripe: Use the form below to launch a secure Stripe Checkout session.
 
-For inquiries about funding, collaboration, or longer-term support, use the [contact page](/contact/).
+For inquiries about funding, collaboration, or longer-term support, consider using the [contact](/contact/) page.
 
 <div class="support-wrapper">
 <form id="donation-form" class="support-form">

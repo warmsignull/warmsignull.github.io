@@ -12,7 +12,7 @@ Need to get in touch about the work, a post, collaboration, or support? I read
 every message.
 
 Email  
-**warmsignull@gmail.com**
+**warmsignull&#64;gmail.com**
 
 Other ways to connect  
 - [GitHub](https://github.com/warmsignull)  

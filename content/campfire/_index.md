@@ -23,3 +23,15 @@ Does anyone else feel slightly personally attacked by this?
     style="position:absolute;top:0;left:0;width:100%;height:100%;">
   </iframe>
 </div>
+
+---
+
+This movie deserves way more recognition.
+
+![Paul Movie](/images/movie-paul.jpg)
+
+---
+
+Timeless classic.
+
+![Back to the Future](/images/move-back-to-the-future.jpg)
